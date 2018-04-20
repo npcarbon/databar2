@@ -43,12 +43,12 @@
 
 
 
-          <div class="visible-md visible-lg">
+          <div class="visible-md visible-lg visible-sm ">
                <?php
                      include 'navlg.inc';
                ?>
           </div>
-          <div class="visible-sm visible-xs">               
+          <div class="visible-xs">               
                <?php
                      include 'navsm.inc';
                ?>
@@ -59,6 +59,7 @@
 
 <section id="slide" >
      <div class="container">
+ <!-- <center><img src="images/logolight.png" style="width: 15%;" class="img-responsive"alt="Logo" style="top: 100px;"></center>                              -->
           
 
 
@@ -101,7 +102,6 @@
                    </a>
                  </div>
                </section>
-                              
      </div>
 </section>
 <!-- Product Section -->
@@ -196,25 +196,23 @@
 
 <!-- Home Section -->
 
-<section id="home" class="main">
+<section id="home" class="main" style="padding-left: 10px; padding-right: 10px">
      <div class="overlay"></div>
-	<div class="container">
-		<div class="row">
+     	<div class="row">
 
                <div class="wow fadeInUp col-md-6 col-sm-5 col-xs-10 col-xs-offset-1 col-sm-offset-0" data-wow-delay="0.2s">
-                    <img src="images/home-img.png" class="img-responsive" alt="Home">
+                    <img src="images/knox.png" class="img-responsive" alt="Home">
                </div>
 
                <div class="col-md-6 col-sm-7 col-xs-12">
                     <div class="home-thumb">
-                         <h1 class="wow fadeInUp" data-wow-delay="0.6s">Our company</h1>
-                         <p class="wow fadeInUp" data-wow-delay="0.8s">The optimal way to present your beautiful mobile app for your startup team. Let us create amazing things!</p>
-                         <a href="#product" class="wow fadeInUp section-btn btn btn-success smoothScroll" data-wow-delay="1s">Download App</a>
+                         <h1 class="wow fadeInUp" data-wow-delay="0.6s">Knox Technology</h1>
+                         <p class="wow fadeInUp" data-wow-delay="0.8s">Knox is a new security feature that is being offered with certain Samsung handsets. It helps you to securely separate your personal and professional data. Essentially, you can have the benefits of using a 'work phone' without the need to carry, and secure, a separate device.</p>
+                         <a href="#product" class="wow fadeInUp section-btn btn btn-success smoothScroll" data-wow-delay="1s">Learn more</a>
                     </div>
                </div>
 
 		</div>
-	</div>
 </section>
 
 <!-- product Section -->
@@ -367,7 +365,10 @@
           Telphone : +66 2 102 2591 <br>
           E-mail : sales@databar.co.th      
           </p>
+<div class="hidden-xs">
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15498.40180804764!2d100.617811!3d13.802943!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbe44151e51909d75!2sDATABAR+Company+Limited!5e0!3m2!1sen!2sus!4v1523197242767" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+     
+</div>
                          
      </div>
 </div>
