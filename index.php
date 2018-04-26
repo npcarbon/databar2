@@ -27,7 +27,6 @@
 
 <!-- Main css -->
 <link rel="stylesheet" href="css/style1.css">
-<link rel="stylesheet" href="css/cd3-style.css">
 <link rel="stylesheet" href="css/dropbtn.css">
 <link rel="stylesheet" href="css/slideshow.css">
 
@@ -43,14 +42,14 @@
 
 
 
-          <div class="visible-md visible-lg visible-sm ">
+          <div class="visible-md visible-lg ">
                <?php
-                     include 'navlg.inc';
+                     include 'include/navlg.inc';
                ?>
           </div>
-          <div class="visible-xs">               
+          <div class="visible-xs visible-sm">               
                <?php
-                     include 'navsm.inc';
+                     include 'include/navsm.inc';
                ?>
           </div>
 
@@ -157,7 +156,7 @@
 
 
 <section id="whychooseus">
-     <div class="container">
+     <div class="container-fluid">
           <div class="row">
 
                <div class="col-md-offset-2 col-md-8 col-sm-12">
@@ -168,21 +167,22 @@
                     </div>
                     <div class="wow fadeInUp product-form" data-wow-delay="0.8s">
                          <div class="col-md-4 col-xs-12 text-center item-block">
-                              <center><img src="images/icons/tools-icon.png" width="50%" class="img-responsive"></center>
+                              <center><img src="images/icons/tools-icon.png" width="30%" class="img-responsive"></center>
                               <h2>Service</h2>
-                              <p>อธิบายอย่างคร่าวๆ</p>
-                              <center><button class="btn btn-success section-btn">see more</button></center>
+                              <p style="font-family: 'Signika', sans-serif; font-size: 1em;">DATABAR provides a broad range of experienced sales reps, knowledgeable technical support and skilled professional services to help channel partners to achieve growth in a variety of vertical markets including field force automation, retail, services, healthcare, finance & banking, transport & logistics, manufacturing & supply chain, government and public sector.
+</p>
+                              <center><button class="btn btn-success section-btn" onclick="location.href='service.php'">see more</button></center>
                          </div>
                          <div class="col-md-4 col-xs-12 text-center item-block">
-                              <center><img src="images/icons/product.png" width="50%" class="img-responsive"></center>
+                              <center><img src="images/icons/product.png" width="30%" class="img-responsive"></center>
                               <h2>Product</h2>
-                              <p>อธิบายอย่างคร่าวๆ</p>
+                              <p style="font-family: 'Signika', sans-serif; font-size: 1em;">DATABAR is business-to-business (B2B) distributor of Samsung enterprise mobility, Samsung KNOX (EMM), 42Gears mobility solutions – SaaS/On-cloud and On-premise, barcode and complementary mobility solutions on Samsung Android, Android, iOS, Windows OS platforms.</p>
                               <center><button class="btn btn-success section-btn">see more</button></center>
                          </div>
                          <div class="col-md-4 col-xs-12 text-center item-block">
-                              <center><img src="images/icons/product-destruction-company.png" width="50%" class="img-responsive"></center>
-                              <h2>Partners</h2>
-                              <p>อธิบายอย่างคร่าวๆ</p>
+                              <center><img src="images/icons/product-destruction-company.png" width="30%" class="img-responsive"></center>
+                              <h2>Our mission</h2>
+                              <p style="font-family: 'Signika', sans-serif; font-size: 1em;">Databar enables to help mobile operators or carriers, independent software providers, system integrators, technology solution providers, value-added resellers (VARs), at what they do best by providing the best products, complementary solutions, proprietary tools and supports in the vertical industries. We aim to enhance your business with seamless provision </p>
                               <center><button class="btn btn-success section-btn">see more</button></center>
                          </div>
                     </div>
@@ -201,7 +201,7 @@
      	<div class="row">
 
                <div class="wow fadeInUp col-md-6 col-sm-5 col-xs-10 col-xs-offset-1 col-sm-offset-0" data-wow-delay="0.2s">
-                    <img src="images/knox.png" class="img-responsive" alt="Home">
+                    <img src="images/Knox.png" class="img-responsive">
                </div>
 
                <div class="col-md-6 col-sm-7 col-xs-12">
@@ -311,67 +311,9 @@
 
 <!-- Footer Section -->
 
-<footer>
-	<div class="container">
-		<div class="row">
-
-               <div class="col-md-8 col-sm-6">
-                    <div class="wow fadeInUp footer-copyright" data-wow-delay="0.4s">
-                         <p>Copyright &copy; 2018 Databar co.,Ltd.
-                         </p>
-                    </div>
-               </div>
-
-			<div class="col-md-4 col-sm-6">
-				<ul class="wow fadeInUp social-icon" data-wow-delay="0.8s">
-                         <li><a href="#" class="fa fa-facebook"></a></li>
-                         <li><a href="#" class="fa fa-twitter"></a></li>
-                         <li><a href="#" class="fa fa-google-plus"></a></li>
-                         <li><a href="#" class="fa fa-dribbble"></a></li>
-                         <li><a href="#" class="fa fa-linkedin"></a></li>
-                    </ul>
-               </div>
-			
-		</div>
-	</div>
-</footer>
-
-<!-- Back top -->
-
-<a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
-
-<!-- Modal Contact -->
-
-<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-     <div class="modal-dialog">
-      <div class="modal-content modal-popup">
-          <div class="modal-header">
-               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-               <h2 class="modal-title">Contact Info</h2>
-               <hr>
-          </div>
-          <p style="color: #FFF; font-family: 'Signika', sans-serif;">
-               DATABAR Company Limited 
-          </p>
-          <p style="color: #FFF;">
-               1448/15 Crystal Design Center (CDC), L2 2FL., <br>
-               Room 202. 204. 206.208. <br>
-               Soi Ladprao 87 (Chandra Suk) Praditmanuthum Rd., <br>
-               Klongjan, Bangkapi, Bangkok 10240, <br>
-               THAILAND 
-          </p>
-          <hr>
-          <p style="color: #FFF;">
-          Telphone : +66 2 102 2591 <br>
-          E-mail : sales@databar.co.th      
-          </p>
-<div class="hidden-xs">
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15498.40180804764!2d100.617811!3d13.802943!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbe44151e51909d75!2sDATABAR+Company+Limited!5e0!3m2!1sen!2sus!4v1523197242767" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-     
-</div>
-                         
-     </div>
-</div>
+<?php
+     include 'include/foot.inc';
+?>
 
 
 
