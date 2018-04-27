@@ -8,16 +8,16 @@ include '../../include/condb.php';
 			if(move_uploaded_file($_FILES["filUpload"]["tmp_name"],"images/products/".$_FILES["filUpload"]["name"]))
 				{
 					
-					$sql = "INSERT INTO products (Pro_Name, Pro_Detail, Pro_Descpt, Brand_ID, Type_ID) "
+					$sql = "INSERT INTO products (Pro_Name, Pro_Code, Pro_Detail, Pro_Descpt, Brand_ID, Type_ID) "
 					. "VALUES ('".$_POST["pro_name"]."',"
+					." '".$_POST["pro_code"]."',"
 					." '".$_POST["editor1"]."',"
 					." '".$_POST["editor2"]."',"
 					." '".$_POST["brand"]."',"
-					." '".$_POST["type"]."',"
-					." '".$_POST["cus_url"]."')";
+					." '".$_POST["type"]."')";
 					$result = @mysqli_query($conn, $sql) or die ("Error in query: $sql " . mysqli_error());
 					
-						echo "<script>alert('Add the new Customer is SUCCESS!');</script>";
+						echo "<script>alert('Add the new Product is SUCCESS!');</script>";
 						echo "<meta http-equiv ='refresh'content='0;URL=../addproduct.php'>";
 						
 					

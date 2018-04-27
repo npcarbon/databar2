@@ -5,7 +5,7 @@ include '../include/condb.php';
 ?>
 
 <!--  -->
-<select name="brand" class="form-control" onchange="getType(this.value)">
+<select name="brand" class="form-control" onchange="getType(<?= $group; ?>,this.value)">
  <option>Brand of Product</option>
 	<?php
 	$sql="SELECT * FROM brands WHERE Group_ID = $group";

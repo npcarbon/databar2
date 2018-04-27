@@ -24,66 +24,29 @@ include '../include/condb.php'
 <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
 <script src="//cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
-<script type="text/javascript">
-	function getBrand(Group_Id){
-   var strURL="findBand.php?group="+Group_Id;
-   var xhttp = new XMLHttpRequest();
-    if (Group_Id.length == 0) { 
-    document.getElementById("branddiv").innerHTML = "";
-    return;
-  }
-  xhttp.onreadystatechange = function(){
-  	if (this.readyState == 4 && this.status == 200) {
-  		document.getElementById("branddiv").innerHTML = this.responseText;
-  	}
-  };
 
-   xhttp.open("GET", strURL, true);
-   xhttp.send();
-   }
-</script>
 </head>
 <body>
 	<div class="container">
 		<form class="form-control" method="post" action="data/savetype.php" style="padding-top: 50px; background-color: ##F5F5F5;" enctype="multipart/form-data">
-		<h1>Add New Type</h1>
-
-<!-- 				<h5 style="padding-top: 20px;">Product's Picture </h5><br>
-				<input type="file" name="filUpload" class="form-control"><br>
- -->
-				<h5>Type's Name </h5>
-				<input type="text" name="name" class="form-control" >
-
-				
-						<h5 style="padding-top: 20px;">Group</h5><br>
-							<select name="brand" class="form-control" onchange="getBrand(this.value)">
-								<option value="0">Group of Brand</option>
+		<h1>Type</h1>
 								<?php
-								$sql = "SELECT * FROM groups";
+								$sql = "SELECT TYPES . * , brands.Brand_Name
+										FROM TYPES 
+										INNER JOIN brands ON types.Brand_ID = brands.Brand_ID
+										ORDER BY  `types`.`Brand_ID` ASC ";
 								$query = $conn->query($sql);
 								while ($result = mysqli_fetch_array($query,MYSQLI_ASSOC)) {
 									?>
-									<option value="<?= $result['Group_ID']?>"><?= $result['Group_Name']?></option>"
+									<?= $result['Brand_ID']?> <?= $result['Brand_Name']?>
 									<?php
 								}
 								?>
 							</select>
-						<h5 style="padding-top: 20px;">Brand</h5><br>
-							<div id="branddiv">
-							<select name="brand" class="form-control">
-								<option value="0">Group of Brand</option>
-							</select>
-							</div>
+					
 
 				
-			<div class="container row" style="padding-top: 20px;">
-				<button type="submit" class="btn btn-success btn-lg  btn-block">
-					Submit
-				</button>
-				<button type="button" class="btn btn-danger btn-lg  btn-block" onclick="window.location.href='index.php';">
-					Back
-				</button>
-			</div>			
+		
 		</form>
 
 	</div>

@@ -44,8 +44,8 @@ function getBrand(Group_Id){
    xhttp.send();
    }
 
-function getType(Brand_ID){
-  var strURL="findtype.php?brand="+Brand_ID;
+function getType(Group_Id, Brand_ID){
+  var strURL="findtype.php?group="+Group_Id+"&brand="+Brand_ID;
   var xhttp = new XMLHttpRequest();
 if (Brand_ID.length == 0) { 
     document.getElementById("typediv").innerHTML = "";
@@ -105,7 +105,9 @@ if (Brand_ID.length == 0) {
 						</div>
 					</div>
 				</div>
-				<h5 style="padding-top: 20px;">Product's Name </h5>
+				<h5 style="padding-top: 20px;">Product's Code </h5>
+				<input type="text" name="pro_code" class="form-control" >
+				<h5 style="padding-top: 20px;">Product's Model </h5>
 				<input type="text" name="pro_name" class="form-control" >
 
 				<h5 style="padding-top: 20px;">Product's Detail</h5>
