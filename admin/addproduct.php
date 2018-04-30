@@ -63,6 +63,9 @@ if (Brand_ID.length == 0) {
 </script>
 </head>
 <body>
+<?php
+include 'sidebar.html';
+?>
 	<div class="container">
 		<form class="form-control" method="post" action="saveproduct.php" style="padding-top: 50px; background-color: ##F5F5F5;" enctype="multipart/form-data">
 		<h1>Add New Product</h1>
@@ -127,7 +130,7 @@ if (Brand_ID.length == 0) {
 				<button type="submit" class="btn btn-success btn-lg  btn-block">
 					Submit
 				</button>
-				<button type="button" class="btn btn-danger btn-lg  btn-block" onclick="window.location.href='index.php';">
+				<button type="button" class="btn btn-danger btn-lg  btn-block" onclick="window.location.href='products.php';">
 					Back
 				</button>
 			</div>			

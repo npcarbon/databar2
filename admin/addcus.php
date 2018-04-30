@@ -44,6 +44,9 @@
 
 </head>
 <body>
+<?php
+include 'sidebar.html';
+?>
 	<div class="container">
 		<form class="form-addcus" method="post" action="savecus.php" style="padding-top: 50px;" enctype="multipart/form-data">
 		<h1>Add Customers</h1>

@@ -27,6 +27,9 @@ include '../include/condb.php'
 
 </head>
 <body>
+<?php
+include 'sidebar.html';
+?>
 	<div class="container">
 		<form class="form-control" method="post" action="data/savebrand.php" style="padding-top: 50px; background-color: ##F5F5F5;" enctype="multipart/form-data">
 		<h1>Add New Brand</h1>

@@ -20,6 +20,7 @@
 <link href='https://fonts.googleapis.com/css?family=Unica+One' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+<link href="sidebar.css" rel="stylesheet">
 
 <style type="text/css">
 
@@ -40,6 +41,11 @@ a:hover, a:active, a:focus {
 
 </head>
 <body>
+<?php
+include 'sidebar.html';
+?>
+<!-- <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a> -->
+
 	<div class="container">
 		<form class="form-control" style="padding-top: 50px;" enctype="multipart/form-data">
 		<h1><u>Website Manager</u></h1><hr>

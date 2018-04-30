@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="sidebar.css" rel="stylesheet">
+<style type="text/css">
+    .list-group-item{
+        background-color: #000;
+        color: #fff;
+    }
+    .list-group-item a:hove{
+      text-decoration: none;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.2);
+    }
+</style>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper" >
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand" style="padding-top: 20px;">
+                        <h6 style="color: #fff;">Databar System Manager</h6>
+                </li>
+                <li>
+                    <a style="color: #fff; padding: 0px;" class="btn btn-default text-left" href="index.php"><h6>Home</h6></a>
+                </li>
+                 <div id="accordion">
+                  <div class="card" style="background-color: #000; color: #fff;">
+                    <div class="card-header" id="headingOne" style="padding: 5px;">
+                        <a class="btn btn-default text-left"  data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                          Products <i class="fa fa-angle-down"></i>
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="card-body" style="padding: 0px;">
+                            <li><a href="products.php" class="list-group-item" style="padding: 0px;">View all</a></li>
+                            <li><a href="addproduct.php" class="list-group-item" style="padding: 0px;">Add new</a></li>   
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="background-color: #000; color: #fff;">
+                    <div class="card-header" id="headingTwo" style="padding: 5px;">
+                        <a class="btn btn-default text-left"  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Types <i class="fa fa-angle-down"></i>
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                      <div class="card-body" style="padding: 0px;">
+                            <li><a href="type.php" class="list-group-item" style="padding: 0px;">View all</a></li>
+                            <li><a href="addtype.php" class="list-group-item" style="padding: 0px;">Add new</a></li>   
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="background-color: #000; color: #fff;">
+                    <div class="card-header" id="headingThree" style="padding: 5px;">
+                        <a  class="btn btn-default text-left"  data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Groups <i class="fa fa-angle-down"></i>
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                      <div class="card-body" style="padding: 0px;">
+                            <li><a href="#" class="list-group-item" style="padding: 0px;">View all</a></li>
+                            <li><a href="addgroup.php" class="list-group-item" style="padding: 0px;">Add new</a></li>   
+                      </div>
+                    </div>
+                  <div class="card" style="background-color: #000; color: #fff;">
+                    <div class="card-header" id="heading4" style="padding: 5px;">
+                        <a  class="btn btn-default text-left"  data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                          Brands <i class="fa fa-angle-down"></i>
+                        </a>
+                    </div>
+                    <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
+                      <div class="card-body" style="padding: 0px;">
+                            <li><a href="#" class="list-group-item" style="padding: 0px;">View all</a></li>
+                            <li><a href="addbrand.php" class="list-group-item" style="padding: 0px;">Add new</a></li>   
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+                <a style="padding-top: 10px;" href="#menu-toggle" class="btn btn-outline-danger  fixed-top" id="menu-toggle">Menu</a>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
