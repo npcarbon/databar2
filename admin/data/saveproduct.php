@@ -5,15 +5,15 @@ include '../../include/condb.php';
 	$query = @mysqli_query($conn, $sql);
 	$result = @mysqli_fetch_array($query,MYSQLI_ASSOC);
 		if ($result['Pro_Name'] != $_POST['pro_name']) {
-			if(move_uploaded_file($_FILES["filUpload"]["tmp_name"],"images/products/".$_FILES["filUpload"]["name"]))
+			if(move_uploaded_file($_FILES["filUpload"]["tmp_name"],"../images/products/".$_FILES["filUpload"]["name"]))
 				{
 					
-					$sql = "INSERT INTO products (Pro_Name, Pro_Code, Pro_Detail, Pro_Descpt, Brand_ID, Type_ID) "
+					$sql = "INSERT INTO products (Pro_Name, Pro_Code, Pro_Detail, Pro_Descpt, Pic, Type_ID) "
 					. "VALUES ('".$_POST["pro_name"]."',"
 					." '".$_POST["pro_code"]."',"
 					." '".$_POST["editor1"]."',"
 					." '".$_POST["editor2"]."',"
-					." '".$_POST["brand"]."',"
+					." '".$_FILES["filUpload"]["name"]."',"
 					." '".$_POST["type"]."')";
 					$result = @mysqli_query($conn, $sql) or die ("Error in query: $sql " . mysqli_error());
 					
