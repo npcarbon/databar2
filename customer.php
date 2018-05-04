@@ -1,9 +1,8 @@
 <?php
-        ini_set('display_errors', 1);
-        error_reporting(~0);
+
       include 'include/condb.php';
 
-      $sql = "SELECT * FROM Customer";
+      $sql = "SELECT * FROM customer";
       $query = $conn->query($sql);
 ?>
 <!DOCTYPE html>
@@ -34,12 +33,12 @@
 <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
 
 <!-- Main css -->
-<link rel="stylesheet" href="css/style1.css">
+<link rel="stylesheet" href="css/webstyle.css">
 <link rel="stylesheet" href="css/dropbtn.css">
 <link rel="stylesheet" href="css/slideshow.css">
 
 </head>
-<body style="padding-top: 50px;">
+<body>
 
 
 <!-- PRE LOADER -->
@@ -62,9 +61,9 @@
           </div>
 
 <!-- ###################### Start Content ############################# -->
-<div id="product" style="background: url(images/customer.jpg);">
+<div id="product" style="background: url(images/customer.jpg); height: 50%;">
   <div class="overlay">   
-    <h1 style="text-align: center;padding-bottom: 50px;padding-top: 50px;"><u>We are trust from </u></h1>
+    <h1 style="text-align: center;"><u>We are trust from </u></h1>
   </div>
 </div>
 <div style=" background-color: #fff;padding: 50px;">
@@ -76,7 +75,7 @@
           # code...
           ?>
           <div class="col-md-2 col-sm-4" style="padding-top: 30px; text-align: center;">
-            <a href="<?= $result['Cus_Url']; ?>" target="_blank"><img src="Admin/customers/<?= $result['Cus_Pic']; ?>" height="70" ></a>
+            <a href="<?= $result['Cus_Url']; ?>" target="_blank"><img src="Admin/imgaes/customers/<?= $result['Cus_Pic']; ?>" height="70" ></a>
           </div>
       <?php    
         }

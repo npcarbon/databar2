@@ -5,7 +5,7 @@ include '../../include/condb.php';
 	$query = @mysqli_query($conn, $sql);
 	$result = @mysqli_fetch_array($query,MYSQLI_ASSOC);
 		if ($result['Pro_Name'] != $_POST['pro_name']) {
-			if(move_uploaded_file($_FILES["filUpload"]["tmp_name"],"../images/products/".$_FILES["filUpload"]["name"]))
+			if(move_uploaded_file($_FILES["filUpload"]["tmp_name"],"../imgaes/products/".$_FILES["filUpload"]["name"]))
 				{
 					
 					$sql = "INSERT INTO products (Pro_Name, Pro_Code, Pro_Detail, Pro_Descpt, Pic, Type_ID) "
@@ -15,7 +15,7 @@ include '../../include/condb.php';
 					." '".$_POST["editor2"]."',"
 					." '".$_FILES["filUpload"]["name"]."',"
 					." '".$_POST["type"]."')";
-					$result = @mysqli_query($conn, $sql) or die ("Error in query: $sql " . mysqli_error());
+					$result = mysqli_query($conn, $sql) or die ("Error in query: $sql " . mysqli_error());
 					
 						echo "<script>alert('Add the new Product is SUCCESS!');</script>";
 						echo "<meta http-equiv ='refresh'content='0;URL=../addproduct.php'>";

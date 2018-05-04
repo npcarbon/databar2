@@ -1,4 +1,11 @@
-<div class="navbar navbar-default navbar-fixed-top" style="height: 80px;">
+<style type="text/css">
+  .shadow {
+  -webkit-box-shadow: 1px 1px 3px 2px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    1px 1px 3px 2px #ccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         1px 1px 3px 2px #ccc;
+}
+</style>
+<div class="navbar navbar-default shadow" style="height: 80px;">
   <div class="container">
     <div class="navbar-header">
       <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -13,18 +20,19 @@
         <li>
           <div class="dropdown">
             <a class="dropbtn" href="#" style="font-family: 'Signika', sans-serif;">Product</a> 
-            <div class="dropdown-content fadedInUp">
-              <div class="subdd">
-                <a href="#" class="subbtn">samsung</a>
+             <div class="dropdown-content fadedInUp">
+              <!--<div class="subdd">
+                <a href="#" class="subbtn">Mobility</a>
                   <div class="sub-content">
                     <a href="#">Product's name</a>
                     <a href="#">Product's name</a>
                     <a href="#">Product's name</a>
                   </div>
-              </div>
-              
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
+              </div> -->
+              <a href="product.php?group=1">Mobility</a>
+              <a href="product.php?group=2">Printer</a>
+              <a href="product.php?group=3">Micro Computer/PDA</a>
+              <a href="product.php?group=4">Scanner/Barcode</a>
             </div>
           </div>
         </li>

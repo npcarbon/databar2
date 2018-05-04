@@ -33,18 +33,6 @@ include 'sidebar.html';
 ?>
 <div class="container">
 	<?php
-
-	?>
-	<form class="form-control" method="post" action="data/savetype.php" style="padding-top: 50px; background-color: ##F5F5F5;" enctype="multipart/form-data">
-		<h1>Products</h1>
-    <a href="addproduct.php" class="btn btn-outline-success btn-sm"> <span style="font-size: 1em;"><strong>+</strong></span> Add new product</a><br><br>
-			<?php
-				$sql = "SELECT products.*, types.Type_Name
-						FROM products 
-						INNER JOIN types ON products.Type_ID = types.Type_ID
-						ORDER BY  products.Type_ID ASC 
-						LIMIT 0,30";
-				$query = $conn->query($sql);
 				$action = isset($_GET['a']) ? $_GET['a'] : "";
 					switch ($action) {
 						case 'edit':
@@ -57,6 +45,18 @@ include 'sidebar.html';
 							echo "<div class=\"alert alert-danger\"><center>Product deleted.</center></div>";
 						break;
 						}
+	?>
+	<form class="form-control" method="post" action="data/savetype.php" style="padding-top: 50px; background-color: ##F5F5F5;" enctype="multipart/form-data">
+		<h1>Products</h1>
+    <a href="addproduct.php" class="btn btn-outline-success btn-sm"> <span style="font-size: 1em;"><strong>+</strong></span> Add new product</a><br><br>
+			<?php
+				$sql = "SELECT products.*, types.Type_Name
+						FROM products 
+						INNER JOIN types ON products.Type_ID = types.Type_ID
+						ORDER BY  products.Type_ID ASC 
+						LIMIT 0,30";
+				$query = $conn->query($sql);
+
 			?>
 				<table class="table">
 					<tr>
@@ -75,7 +75,7 @@ include 'sidebar.html';
 						<td><?= $result['Pro_Name']?></td>
 						<td><?= $result['Type_Name']?></td>
 						<td>
-							<button type="button" class="btn btn-success btn-sm" onclick="">view</button>
+							
 							<button type="button" class="btn btn-primary btn-sm" onclick="window.location.href='edit-product.php?id=<?= $result["Pro_ID"];?>'">Edit</button>
 							<button type="button" class="btn btn-danger btn-sm" onclick="window.location.href='data/delete-product.php?id=<?= $result["Pro_ID"];?>'">Delete</button>
 						</td>

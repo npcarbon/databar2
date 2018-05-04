@@ -1,3 +1,5 @@
+<?php include '../include/condb.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,50 +14,61 @@
 <title>Databar</title>
 <link rel="shortcut icon" href="favicon.png">
 
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/animate.css">
-<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../../css/animate.css">
+<link rel="stylesheet" href="../css/font-awesome.min.css">
 
-<link rel="stylesheet" href="css/magnific-popup.css">
+<link rel="stylesheet" href="../css/magnific-popup.css">
 
-<link rel="stylesheet" href="css/owl.theme.css">
-<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="../css/owl.theme.css">
+<link rel="stylesheet" href="../css/owl.carousel.css">
 
 <link href='https://fonts.googleapis.com/css?family=Unica+One' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
 
 <!-- Main css -->
-<link rel="stylesheet" href="css/webstyle.css">
-<link rel="stylesheet" href="css/dropbtn.css">
-<link rel="stylesheet" href="css/slideshow.css">
-
+<link rel="stylesheet" href="../css/style1.css">
+<link rel="stylesheet" href="../css/dropbtn.css">
+<link rel="stylesheet" href="../css/slideshow.css">
+<style type="text/css">
+  h1, h2, h3, p{
+    color: black;
+    padding: 0;
+  }
+  hr {
+  -moz-border-bottom-colors: none;
+  -moz-border-image: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: #EEEEEE -moz-use-text-color black;
+  border-style: solid none;
+  border-width: 1px 0;
+  width: 70%;
+}
+</style>
 </head>
 <body>
 
 
 <!-- PRE LOADER -->
 
-<div class="preloader">
+<!-- <div class="preloader">
      <div class="sk-spinner sk-spinner-pulse"></div>
-</div>
+</div> -->
 
+<?php
+include 'sidebar.html';
+?>
 
-
-          <div class="visible-md visible-lg visible-sm ">
-               <?php
-                     include 'include/navlg.inc';
-               ?>
-          </div>
-          <div class="visible-xs">               
-               <?php
-                     include 'include/navsm.inc';
-               ?>
-          </div>
 
 <!-- ###################### Start Content ############################# -->
+<?php
+include '../product-detail.php';
+?>    
 
-
+                
 <!-- ###################### End Content ############################# -->
 
 <!-- Footer Section -->

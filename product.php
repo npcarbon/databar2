@@ -1,3 +1,6 @@
+<?php
+include 'include/condb.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,12 +29,12 @@
 <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
 
 <!-- Main css -->
-<link rel="stylesheet" href="css/style1.css">
+<link rel="stylesheet" href="css/webstyle.css">
 <link rel="stylesheet" href="css/dropbtn.css">
 <link rel="stylesheet" href="css/slideshow.css">
 
 </head>
-<body style="padding-top: 50px;">
+<body>
 
 
 <!-- PRE LOADER -->
@@ -54,7 +57,34 @@
           </div>
 
 <!-- ###################### Start Content ############################# -->
-
+<div class="container-fluid" style=" background-color: #fff;padding: 50px;">
+  <?php
+    $sql = "SELECT * FROM groups WHERE Group_ID = '".$_GET['group']."'";
+    $query = $conn->query($sql);
+      while ($result = $query->fetch_array(MYSQLI_ASSOC)) { ?>
+       <h2 style="color: black; padding-bottom: 20px;"><?= $result['Group_Name'];?></h2>
+      <div class="row container">
+          <?php
+          }
+          $sql = "SELECT * FROM products WHERE Group_ID = '".$_GET['group']."'";
+          $query = $conn->query($sql);
+          while ($rs = $query->fetch_array(MYSQLI_ASSOC)) { ?>
+          <div class="col-md-4 col-xs-6">
+            <div class="thumbnail">
+              <a href="product-detail.php?pro_id=<?= $rs['Pro_ID'] ?>"><img src="Admin/imgaes/products/<?= $rs["Pic"]; ?>"  style="padding: 20%;"></a>
+              <h2 style="text-align: center; color: black;"><?= $rs["Pro_Name"]; ?></h2>
+              <hr>
+              <div class="caption">
+                    <h3 class="text-center" style="margin-top: 0px;"><?= $rs["Pro_Code"]; ?></h3>
+                    <p><?= $rs["Pro_Detail"]; ?></p>
+              </div>
+            </div>
+          </div>
+<?php
+}
+  ?> 
+       </div>
+</div>
 
 <!-- ###################### End Content ############################# -->
 

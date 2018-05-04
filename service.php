@@ -26,7 +26,7 @@
 <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
 
 <!-- Main css -->
-<link rel="stylesheet" href="css/style1.css">
+<link rel="stylesheet" href="css/webstyle.css">
 <link rel="stylesheet" href="css/dropbtn.css">
 <link rel="stylesheet" href="css/slideshow.css">
 
@@ -36,7 +36,7 @@
   }
 </style>
 </head>
-<body style="padding-top: 50px;">
+<body>
 
 
 <!-- PRE LOADER -->

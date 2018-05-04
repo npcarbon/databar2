@@ -26,12 +26,12 @@
 <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
 
 <!-- Main css -->
-<link rel="stylesheet" href="css/style1.css">
-<link rel="stylesheet" href="css/dropbtn.css">
+<link rel="stylesheet" href="css/webstyle.css">
+<link rel="stylesheet" href="css/dropbtn1.css">
 <link rel="stylesheet" href="css/slideshow.css">
 
 </head>
-<body style="padding-top: 50px;">
+<body>
 
 
 <!-- PRE LOADER -->
@@ -169,20 +169,20 @@
                          <div class="col-md-4 col-xs-12 text-center item-block">
                               <center><img src="images/icons/tools-icon.png" width="30%" class="img-responsive"></center>
                               <h2>Service</h2>
-                              <p style="font-family: 'Signika', sans-serif; font-size: 1em;">DATABAR provides a broad range of experienced sales reps, knowledgeable technical support and skilled professional services to help channel partners to achieve growth in a variety of vertical markets including field force automation, retail, services, healthcare, finance & banking, transport & logistics, manufacturing & supply chain, government and public sector.
+                              <p style="font-size: initial;">DATABAR provides a broad range of experienced sales reps, knowledgeable technical support and skilled professional services to help channel partners to achieve growth in a variety of vertical markets including field force automation, retail, services, healthcare, finance & banking, transport & logistics, manufacturing & supply chain, government and public sector.
 </p>
                               <center><button class="btn btn-success section-btn" onclick="location.href='service.php'">see more</button></center>
                          </div>
                          <div class="col-md-4 col-xs-12 text-center item-block">
                               <center><img src="images/icons/product.png" width="30%" class="img-responsive"></center>
                               <h2>Product</h2>
-                              <p style="font-family: 'Signika', sans-serif; font-size: 1em;">DATABAR is business-to-business (B2B) distributor of Samsung enterprise mobility, Samsung KNOX (EMM), 42Gears mobility solutions – SaaS/On-cloud and On-premise, barcode and complementary mobility solutions on Samsung Android, Android, iOS, Windows OS platforms.</p>
+                              <p style="font-size: initial">DATABAR is business-to-business (B2B) distributor of Samsung enterprise mobility, Samsung KNOX (EMM), 42Gears mobility solutions – SaaS/On-cloud and On-premise, barcode and complementary mobility solutions on Samsung Android, Android, iOS, Windows OS platforms.</p>
                               <center><button class="btn btn-success section-btn">see more</button></center>
                          </div>
                          <div class="col-md-4 col-xs-12 text-center item-block">
                               <center><img src="images/icons/product-destruction-company.png" width="30%" class="img-responsive"></center>
                               <h2>Our mission</h2>
-                              <p style="font-family: 'Signika', sans-serif; font-size: 1em;">Databar enables to help mobile operators or carriers, independent software providers, system integrators, technology solution providers, value-added resellers (VARs), at what they do best by providing the best products, complementary solutions, proprietary tools and supports in the vertical industries. We aim to enhance your business with seamless provision </p>
+                              <p style="font-size: initial">Databar enables to help mobile operators or carriers, independent software providers, system integrators, technology solution providers, value-added resellers (VARs), at what they do best by providing the best products, complementary solutions, proprietary tools and supports in the vertical industries. We aim to enhance your business with seamless provision </p>
                               <center><button class="btn btn-success section-btn">see more</button></center>
                          </div>
                     </div>
@@ -293,18 +293,7 @@
 
 <!-- Divider Section -->
 
-<section id="divider">
-     <div class="container">
-          <div class="row">
 
-               <div class="col-md-offset-2 col-md-8 col-sm-12">
-                    <h2 class="wow fadeInUp" data-wow-delay="0.4s">Praesent tempor nec orci eu condimentum. Vestibulum varius lorem sed odio lacinia, ut efficitur tellus convallis. Phasellus convallis est nisi, sit amet accumsan ipsum elementum quis. Mauris ac sem mi.</h2>
-                    <a href="#screenshot" class="wow fadeInUp section-btn btn btn-success smoothScroll" data-wow-delay="0.8s">Learn More</a>
-               </div>
-
-          </div>
-     </div>
-</section>
 
 
 
