@@ -21,14 +21,6 @@
           <div class="dropdown">
             <a class="dropbtn" href="#" style="font-family: 'Signika', sans-serif;">Product</a> 
              <div class="dropdown-content fadedInUp">
-              <!--<div class="subdd">
-                <a href="#" class="subbtn">Mobility</a>
-                  <div class="sub-content">
-                    <a href="#">Product's name</a>
-                    <a href="#">Product's name</a>
-                    <a href="#">Product's name</a>
-                  </div>
-              </div> -->
               <a href="product.php?group=1">Mobility</a>
               <a href="product.php?group=2">Printer</a>
               <a href="product.php?group=3">Micro Computer/PDA</a>
@@ -50,8 +42,8 @@
           <div class="dropdown">
             <a class="dropbtn" style="font-family: 'Signika', sans-serif;">Partners</a> 
               <div class="dropdown-content fadedInUp">
-                <a href="#">Business Partners</a>
-                <a href="#">Chanel Partners</a>
+                <a href="business-partners.php">Business Partners</a>
+                <a href="chanel-partners.php">Chanel Partners</a>
               </div>
           </div>
         </li>

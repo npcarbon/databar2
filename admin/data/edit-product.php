@@ -5,7 +5,8 @@ include '../../include/condb.php';
 			SET Pro_Name  = '".$_POST['pro_name']."',
 			Pro_Code = '".$_POST['pro_code']."',
 			Pro_Detail = '".$_POST['editor1']."',
-			Pro_Descpt = '".$_POST['editor2']."'
+			Pro_Descpt = '".$_POST['editor2']."',
+			PDF = '".$_POST['pdf']."'
 			WHERE Pro_ID = '".$_POST['Pro_ID']."'";
 	$query = $conn->query($sql) or die("Error in query: $sql " . mysqli_error());
 	if($query) {

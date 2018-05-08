@@ -29,16 +29,29 @@
 <link rel="stylesheet" href="css/webstyle.css">
 <link rel="stylesheet" href="css/dropbtn1.css">
 <link rel="stylesheet" href="css/slideshow.css">
+<style type="text/css">
+  .item-block {
+    padding-top: 5%;
+  }
+</style>
+<script type="text/javascript">
+  function cutStr($str, $maxChars='', $holder=''){
 
+    if (strlen($str) > $maxChars ){
+      $str = iconv_substr($str, 0, $maxChars,"UTF-8") . $holder;
+  } 
+  return $str;
+} 
+</script>
 </head>
 <body>
 
 
 <!-- PRE LOADER -->
 
-<div class="preloader">
+<!-- <div class="preloader">
      <div class="sk-spinner sk-spinner-pulse"></div>
-</div>
+</div> -->
 
 
 
@@ -124,7 +137,7 @@
                          <a href="#">
                               <img src="images/groups/Group1.jpg" class="img-responsive">
                          </a>    
-                         <center><button class="btn btn-success section-btn visible-lg visible-md" >View All</button></center>
+                         <center><button onclick="window.location.href='product.php?group=1'" class="btn btn-success section-btn visible-lg visible-md" >View All</button></center>
                     </div>
                </div>
                <div class="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.4s">
@@ -132,7 +145,7 @@
                          <a href="#">
                               <img src="images/groups/Group2.jpg" class="img-responsive">
                          </a>
-                         <center><button class="btn btn-success section-btn visible-lg visible-md" >View All</button></center>
+                         <center><button onclick="window.location.href='product.php?group=2'" class="btn btn-success section-btn visible-lg visible-md" >View All</button></center>
                     </div>
                </div>
                <div class="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.4s">
@@ -140,7 +153,7 @@
                           <a href="#">
                               <img src="images/groups/Group3.jpg" class="img-responsive">
                           </a>
-                         <center><button class="btn btn-success section-btn visible-lg visible-md">View All</button></center>
+                         <center><button onclick="window.location.href='product.php?group=3'" class="btn btn-success section-btn visible-lg visible-md">View All</button></center>
                     </div>
                </div>
                <div class="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.4s">
@@ -148,19 +161,19 @@
                          <a href="#">
                               <img src="images/groups/Group4.jpg" class="img-responsive">
                          </a>
-                         <center><button class="btn btn-success section-btn visible-lg visible-md">View All</button></center>
+                         <center><button onclick="window.location.href='product.php?group=4 '" class="btn btn-success section-btn visible-lg visible-md">View All</button></center>
                </div>
           </div>
      </div>
 </section>
 
 
-<section id="whychooseus">
+<section id="whychooseus" style="padding-top: 5%;">
      <div class="container-fluid">
           <div class="row">
 
                <div class="col-md-offset-2 col-md-8 col-sm-12">
-                    <div class="wow bounceIn section-title">
+                    <div class="wow bounceIn section-title" style="padding-bottom: 0px;">
                          <h2>Why Choose Us</h2>
                          <p class="wow fadeInUp" data-wow-delay="0.5s">We are the Telecommunication Equipment Supplier</p>
 
@@ -169,21 +182,20 @@
                          <div class="col-md-4 col-xs-12 text-center item-block">
                               <center><img src="images/icons/tools-icon.png" width="30%" class="img-responsive"></center>
                               <h2>Service</h2>
-                              <p style="font-size: initial;">DATABAR provides a broad range of experienced sales reps, knowledgeable technical support and skilled professional services to help channel partners to achieve growth in a variety of vertical markets including field force automation, retail, services, healthcare, finance & banking, transport & logistics, manufacturing & supply chain, government and public sector.
-</p>
+                              <p style="font-size: 1.1em; min-height: 220px;">DATABAR provides a broad range of experienced sales reps, knowledgeable technical support and skilled professional services to help channel partners to achieve growth in a variety of vertical markets including field force automation, retail, services, healthcare, finance & banking, transport & logistics, manufacturing & supply chain, government and public sector.</p>
                               <center><button class="btn btn-success section-btn" onclick="location.href='service.php'">see more</button></center>
                          </div>
                          <div class="col-md-4 col-xs-12 text-center item-block">
                               <center><img src="images/icons/product.png" width="30%" class="img-responsive"></center>
                               <h2>Product</h2>
-                              <p style="font-size: initial">DATABAR is business-to-business (B2B) distributor of Samsung enterprise mobility, Samsung KNOX (EMM), 42Gears mobility solutions – SaaS/On-cloud and On-premise, barcode and complementary mobility solutions on Samsung Android, Android, iOS, Windows OS platforms.</p>
-                              <center><button class="btn btn-success section-btn">see more</button></center>
+                              <p style="font-size: 1.1em; min-height: 220px;">DATABAR is business-to-business (B2B) distributor of Samsung enterprise mobility, Samsung KNOX (EMM), 42Gears mobility solutions – SaaS/On-cloud and On-premise, barcode and complementary mobility solutions on Samsung Android, Android, iOS, Windows OS platforms.</p>
+                              <center><button class="btn btn-success section-btn" onclick="window.location.href='product.php'">see more</button></center>
                          </div>
                          <div class="col-md-4 col-xs-12 text-center item-block">
-                              <center><img src="images/icons/product-destruction-company.png" width="30%" class="img-responsive"></center>
+                              <center><img src="images/icons/product-destruction-company.png " width="30%" class="img-responsive"></center>
                               <h2>Our mission</h2>
-                              <p style="font-size: initial">Databar enables to help mobile operators or carriers, independent software providers, system integrators, technology solution providers, value-added resellers (VARs), at what they do best by providing the best products, complementary solutions, proprietary tools and supports in the vertical industries. We aim to enhance your business with seamless provision </p>
-                              <center><button class="btn btn-success section-btn">see more</button></center>
+                              <p style="font-size: 1.1em; min-height: 220px;">Databar enables to help mobile operators or carriers, independent software providers, system integrators, technology solution providers, value-added resellers (VARs), at what they do best by providing the best products, complementary solutions, proprietary tools and supports in the vertical industries. We aim to enhance your business with seamless provision </p>
+                              <center><button class="btn btn-success section-btn" onclick="window.location.href='customer.php'">see more</button></center>
                          </div>
                     </div>
                </div>

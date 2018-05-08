@@ -60,7 +60,7 @@
 
 <!-- ###################### Start Content ############################# -->
 <div style=" background-color: #fff;">
-<div id="home" style="background: url(images/service-people.jpg);">
+<div id="home" style="background: url(images/services/services-background.jpg); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center;">
   <div class="overlay" style="opacity: 0.8;background: #000;  "></div>
 
   <div class="container wow bounceIn" data-wow-delay="0.8s">
@@ -84,7 +84,7 @@
         <!-- <div class="row"> -->
           <div class="row wow fadeInUp" style="padding: 20px;" data-wow-delay="0.3s">
             <span class="col-md-3 ">
-              <img src="images/person2.jpg" style="width: 80%;">
+              <img src="images/services/CallCentre1.jpg" style="width: 80%;" >
             </span>
             <div class="col-md-9">
               <h3>Call Centre/Help Desk</h3>
@@ -94,7 +94,7 @@
           </div><hr>
           <div class="row wow fadeInUp" style="padding: 20px;" data-wow-delay="0.3s">
             <div class="col-md-3 ">
-              <img src="images/person2.jpg" style="width: 80%;padding: auto;">
+              <img src="images/services/DepotRepair1.jpg" style="width: 80%;">
             </div>
             <div class="col-md-9">
               <h3>Depot Repair</h3>
@@ -105,7 +105,7 @@
           </div><hr>
           <div class="row wow fadeInUp" style="padding: 20px;" data-wow-delay="0.3s">
             <span class="col-md-3 ">
-              <img src="images/person2.jpg" style="width: 80%;">
+              <img src="images/services/shutterstock.jpg" style="width: 80%;">
             </span>
             <div class="col-md-9">
               <h3>On-Site Repair</h3>
@@ -116,7 +116,7 @@
           </div><hr>
           <div class="row  wow fadeInUp" style="padding: 20px;" data-wow-delay="0.3s">
             <span class="col-md-3 ">
-              <img src="images/person2.jpg" style="width: 80%;">
+              <img src="images/services/kredi-sicili-nasil-temizlenir.jpg" style="width: 80%;">
             </span>
             <div class="col-md-9">
               <h3>Extended warranty and Product service contracts</h3>
@@ -128,7 +128,7 @@
           </div><hr>
           <div class="row  wow fadeInUp" style="padding: 20px;" data-wow-delay="0.3s">
             <span class="col-md-3 ">
-              <img src="images/person2.jpg" style="width: 80%;">
+              <img src="images/services/asesoramiento.jpg" style="width: 80%;">
             </span>
             <div class="col-md-9">
               <h3>User Training</h3>
@@ -138,7 +138,7 @@
           </div><hr>
           <div class="row  wow fadeInUp" style="padding: 20px;" data-wow-delay="0.3s">
             <span class="col-md-3 ">
-              <img src="images/person2.jpg" style="width: 80%;">
+              <img src="images/services/entrepreneurship-2.jpg" style="width: 80%;">
             </span>
             <div class="col-md-9">
               <h3>Consulting Services</h3>
@@ -147,15 +147,18 @@
               today and in the future.</p>              
             </div>
           </div>
-        </div><hr>
-      </div>
-</div>
+        </div>
 
 <!-- Divider Section -->
+        <section id="divider">
+             <h1><u>We'll make you happier!</u></h1>
+        </section>
 
-<section id="divider">
-     <h1><u>We'll make you happier!</u></h1>
-</section>
+</div>
+
+
+
+
 <!-- ###################### End Content ############################# -->
 
 <!-- Footer Section -->

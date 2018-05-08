@@ -109,11 +109,11 @@ include 'sidebar.html';
 					</div>
 				</div>
 				<h5 style="padding-top: 20px;">Product's Code </h5>
-				<input type="text" name="pro_code" class="form-control" >
+				<input type="text" name="pro_code" class="form-control" placeholder="Product's Code">
 				<h5 style="padding-top: 20px;">Product's Model </h5>
-				<input type="text" name="pro_name" class="form-control" >
+				<input type="text" name="pro_name" class="form-control" placeholder="Product's Model" >
 				<h5 style="padding-top: 20px;">Product's PDF </h5><br>
-				<input type="text" name="pdf" class="form-control"><br>
+				<input type="text" name="pdf" class="form-control" placeholder="Product's PDF"><br>
 
 				<h5 style="padding-top: 20px;">Product's Detail</h5>
 				<textarea name="editor1" class="form-control"></textarea>

@@ -51,14 +51,17 @@
           </p>
           <hr>
           <p style="color: #FFF;">
-          Telphone : +66 2 102 2591 <br>
+          Telphone : <a href="tel:+66 2 102 2591">+66 2 102 2591</a> <br>
           E-mail : sales@databar.co.th      
           </p>
 <div class="hidden-xs">
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15498.40180804764!2d100.617811!3d13.802943!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbe44151e51909d75!2sDATABAR+Company+Limited!5e0!3m2!1sen!2sus!4v1523197242767" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-     
 </div>
-                         
+<a href="images/map_CDC.jpg" class="image-popup1">
+     <img src="images/map_CDC.jpg" class="img-responsive" alt="map">
+</a>  
+<a href="images/databarcdc.jpg" class="image-popup1">
+      <img src="images/databarcdc.jpg" class="img-responsive" alt="map">
+</a>                    
      </div>
-</div>
 </div>

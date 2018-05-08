@@ -13,7 +13,7 @@ include '../../include/condb.php';
 						." '".$_POST["group"]."')";
 						$result = @mysqli_query($conn, $sql) or die ("Error in query: $sql " . mysqli_error());
 							
-							echo "<script>alert('Add the new Brand is SUCCESS!');</script>";
+							echo "<script>alert('Add the new Customer is SUCCESS!');</script>";
 							echo "<meta http-equiv ='refresh'content='0;URL=../addbrand.php'>";
 				}elseif ($result['Brand_Name'] != $_POST['name'] && $result['Group_ID'] == $_POST['group']) {
 					$sql = "INSERT INTO brands (Brand_Name, Group_ID) "
@@ -21,7 +21,7 @@ include '../../include/condb.php';
 						." '".$_POST["group"]."')";
 						$result = @mysqli_query($conn, $sql) or die ("Error in query: $sql " . mysqli_error());
 							
-							echo "<script>alert('Add the new Brand is SUCCESS!');</script>";
+							echo "<script>alert('Add the new Customer is SUCCESS!');</script>";
 							echo "<meta http-equiv ='refresh'content='0;URL=../addbrand.php'>";
 				} else{
 					$sql = "INSERT INTO brands (Brand_Name, Group_ID) "
@@ -29,7 +29,7 @@ include '../../include/condb.php';
 						." '".$_POST["group"]."')";
 						$result = @mysqli_query($conn, $sql) or die ("Error in query: $sql " . mysqli_error());
 							
-							echo "<script>alert('Add the new Brand is SUCCESS!');</script>";
+							echo "<script>alert('Add the new Customer is SUCCESS!');</script>";
 							echo "<meta http-equiv ='refresh'content='0;URL=../addbrand.php'>";
 				}
 

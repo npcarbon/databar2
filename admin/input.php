@@ -1,17 +1,11 @@
- <?php   
- //upload.php  
- //echo 'done';  
- $output = '';  
- if(isset($_FILES['file']['name'][0]))  
- {  
-      //echo 'OK';  
-      foreach($_FILES['file']['name'] as $keys => $values)  
-      {  
-           if(move_uploaded_file($_FILES['file']['tmp_name'][$keys], 'imgaes/products/' . $values))  
-           {  
-                $output .= '<div class=col-md-3"><img src="imgaes/products/'.$values.'" class="img-responsive" /></div>';  
-           }  
-      }  
- }  
- echo $output;  
- ?>  
+<DIV class="product-item float-clear" style="clear:both;">
+<DIV class="float-left">
+	<input type="checkbox" name="item_index[]" /></DIV>
+<DIV class="float-left">	
+<input type="file" name="filUpload[]"><br><br>
+<input type="file" name="filUpload[]"><br><br>
+<input type="file" name="filUpload[]"><br><br>
+<input type="file" name="filUpload[]"><br><br>
+</DIV>
+<!-- <DIV class="float-left"><input type="text" name="item_price[]" /></DIV> -->
+</DIV>

@@ -36,6 +36,9 @@
     color: black;
     padding: 0;
   }
+  .box p{
+    font-size: 1.2em;
+  }
   hr {
   -moz-border-bottom-colors: none;
   -moz-border-image: none;
@@ -47,8 +50,6 @@
   border-width: 1px 0;
   width: 70%;
 }
-
-
 </style>
 </head>
 <body>
@@ -106,7 +107,7 @@
                             <div class="col-md-4 col-sm-4" style="background-color: #fafafa; padding: 20px;  min-height: 660px; min-height: 35vw; padding: 2%;">
                                   <h3><?= $result['Pro_Name']; ?></h3>
                                   <p><?= $result['Pro_Code']; ?></p>
-                                  <?= $result['Pro_Detail']; ?>
+                                  <p><?= $result['Pro_Detail']; ?></p>
                                   <?php
 if ($result['PDF'] != "") {
   echo '<center><a href="Admin/PDF/upload/'. $result['PDF'] .'" class="btn btn-primary btn-lg" role="button" style="margin-top: 10%; margin-bottom: 2%; border-radius: 50px; padding-left: 15%; padding-right: 15%; ">Download PDF</a></center>';

@@ -1,5 +1,6 @@
 section.awSlider .carousel{
   display:table;
+  z-index:2;
   -moz-box-shadow: 0 0 4px #444;
 	-webkit-box-shadow: 0 0 4px #444;
 	box-shadow: 0 0 15px rgba(1,1,1,.5);
@@ -32,6 +33,7 @@ section.awSlider img{
 section.awSlider > img{
   position:absolute;
   top:30px;
+  z-index:1;
   transition:all .3s;
   filter: blur(1.8vw);
   -webkit-filter: blur(2vw);

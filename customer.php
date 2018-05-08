@@ -61,7 +61,7 @@
           </div>
 
 <!-- ###################### Start Content ############################# -->
-<div id="product" style="background: url(images/customer.jpg); height: 50%;">
+<div id="product" style="background: url(images/customer.jpg);">
   <div class="overlay">   
     <h1 style="text-align: center;"><u>We are trust from </u></h1>
   </div>

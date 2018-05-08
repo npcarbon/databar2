@@ -32,7 +32,20 @@ include 'include/condb.php';
 <link rel="stylesheet" href="css/webstyle.css">
 <link rel="stylesheet" href="css/dropbtn.css">
 <link rel="stylesheet" href="css/slideshow.css">
+<script type="text/javascript">
+  function cutStr($str, $maxChars='', $holder=''){
 
+    if (strlen($str) > $maxChars ){
+      $str = iconv_substr($str, 0, $maxChars,"UTF-8") . $holder;
+  } 
+  return $str;
+} 
+</script>
+<style type="text/css">
+  h1,h2,h3,h4,h5{
+    color: black;
+  }
+</style>
 </head>
 <body>
 
@@ -57,26 +70,70 @@ include 'include/condb.php';
           </div>
 
 <!-- ###################### Start Content ############################# -->
-<div class="container-fluid" style=" background-color: #fff;padding: 50px;">
+<div class="visible-lg visible-md" style=" background-color: #fff;padding: 50px;">
   <?php
     $sql = "SELECT * FROM groups WHERE Group_ID = '".$_GET['group']."'";
     $query = $conn->query($sql);
       while ($result = $query->fetch_array(MYSQLI_ASSOC)) { ?>
        <h2 style="color: black; padding-bottom: 20px;"><?= $result['Group_Name'];?></h2>
-      <div class="row container">
+    <div class="container-fluid">
+      <div class="row">
           <?php
           }
           $sql = "SELECT * FROM products WHERE Group_ID = '".$_GET['group']."'";
           $query = $conn->query($sql);
           while ($rs = $query->fetch_array(MYSQLI_ASSOC)) { ?>
-          <div class="col-md-4 col-xs-6">
-            <div class="thumbnail">
-              <a href="product-detail.php?pro_id=<?= $rs['Pro_ID'] ?>"><img src="Admin/imgaes/products/<?= $rs["Pic"]; ?>"  style="padding: 20%;"></a>
-              <h2 style="text-align: center; color: black;"><?= $rs["Pro_Name"]; ?></h2>
-              <hr>
-              <div class="caption">
-                    <h3 class="text-center" style="margin-top: 0px;"><?= $rs["Pro_Code"]; ?></h3>
-                    <p><?= $rs["Pro_Detail"]; ?></p>
+          <div class="col-lg-2 col-md-4 col-xs-12">
+            <div class="panel panel-default"  style="min-height: 570px;">
+              <div class="panel-heading">
+                <h3 class="panel-title"><?= $rs["Pro_Name"]; ?></h3>
+                <h5 style="margin-top: 0px;"><?= $rs["Pro_Code"]; ?></h5>
+              </div>
+              <div class="panel-body">
+                <a href="product-detail.php?pro_id=<?= $rs['Pro_ID'] ?>">
+                  <img src="Admin/imgaes/products/<?= $rs["Pic"]; ?>" class="img-responsive">
+                </a>
+                <hr>
+                <p><?php 
+                
+                 if(strlen($rs['Pro_Detail']) > 100) {
+                    
+                   echo $subject = substr($rs['Pro_Detail'],0,100)."... <br><br> <a class='btn btn-success' role='button' href='product-detail.php?pro_id=".$rs["Pro_ID"]."'>READ MORE</a>";
+                   }
+                ?>
+                </p>
+              </div>
+            </div>
+          </div>
+<?php
+}
+  ?> 
+      </div>
+    </div>
+</div>
+<div class="visible-sm visible-xs" style=" background-color: #fff;padding: 50px;">
+  <?php
+    $sql = "SELECT * FROM groups WHERE Group_ID = '".$_GET['group']."'";
+    $query = $conn->query($sql);
+      while ($result = $query->fetch_array(MYSQLI_ASSOC)) { ?>
+       <h2 style="color: black; padding-bottom: 20px;"><?= $result['Group_Name'];?></h2>
+       <div class="container-fluid">
+      <div class="row">
+          <?php
+          }
+          $sql = "SELECT * FROM products WHERE Group_ID = '".$_GET['group']."'";
+          $query = $conn->query($sql);
+          while ($rs = $query->fetch_array(MYSQLI_ASSOC)) { ?>
+          <div class="col-sm-6 col-xs-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><?= $rs["Pro_Name"]; ?></h3>
+                <h5 style="margin-top: 0px;"><?= $rs["Pro_Code"]; ?></h5>
+              </div>
+              <div class="panel-body">
+                <a href="product-detail.php?pro_id=<?= $rs['Pro_ID'] ?>">
+                  <img src="Admin/imgaes/products/<?= $rs["Pic"]; ?>" class="img-responsive">
+                </a>
               </div>
             </div>
           </div>
@@ -84,8 +141,8 @@ include 'include/condb.php';
 }
   ?> 
        </div>
+  </div>
 </div>
-
 <!-- ###################### End Content ############################# -->
 
 <!-- Footer Section -->
