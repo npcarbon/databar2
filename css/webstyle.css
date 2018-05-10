@@ -1,7 +1,7 @@
 
 body {
-    background: #1c1c1c;
-    font-family: 'Signika', sans-serif;
+    background: #000000;
+    font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 300;
     overflow-x: hidden;
@@ -138,6 +138,7 @@ a:hover, a:active, a:focus {
 #product,
 #whychooseus {
   padding-bottom: 100px;
+    padding-top: 50px;
 }
 
 #divider,
@@ -193,11 +194,11 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-    Navigation section              
+    Navigation section
 -----------------------------------------*/
 
 .navbar-default {
-    background: #ffffff;
+    background: rgba(0,0,0,0.5);
     border: none;
     box-shadow: none;
     margin: 0 !important;
@@ -218,7 +219,7 @@ a:hover, a:active, a:focus {
 }
 
 .navbar-default .navbar-nav li a {
-    color: #656565;
+    color: #b2b2b2;
     font-size: 18px;
     font-weight: 500;
     line-height: 50px;
@@ -256,8 +257,13 @@ a:hover, a:active, a:focus {
   }
 
 .navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus { 
+.navbar-default .navbar-toggle:focus {
   background-color: transparent;
+}
+.my-navbar{
+    border: 0;
+    border-radius: 0;
+    background: rgba(0,0,0,0.5);
 }
 
 
@@ -283,10 +289,7 @@ a:hover, a:active, a:focus {
 }
 
 #home .overlay {
-  background: #4776E6; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #4776E6 , #8E54E9); /* Chrome 10-25, Safari 5.1-6 */ 
-  background: linear-gradient(to left, #4776E6 , #8E54E9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  opacity: 0.9;
+  background: rgba(0, 0, 0, 0.8);
   position: absolute;
   width: 100%;
   height: 80vh;
@@ -338,7 +341,9 @@ a:hover, a:active, a:focus {
 /*---------------------------------------
    slide section              
 -----------------------------------------*/
-
+#slide{
+    background: #3f3f3f;
+}
 #slide img {
   width: 100%;
 }
@@ -380,7 +385,9 @@ a:hover, a:active, a:focus {
 /*---------------------------------------
     Screenshot section              
 -----------------------------------------*/
-
+#screenshot{
+    background:  #3f3f3f;
+}
 #screenshot .col-md-3 {
   display: block;
   width: 100%;
@@ -492,7 +499,7 @@ a:hover, a:active, a:focus {
 }
 
 #product .overlay {
-  background: #1dc9e3;
+  background: rgba(0,0,0,0.8);
   opacity: 0.9;
   position: absolute;
   width: 100%;

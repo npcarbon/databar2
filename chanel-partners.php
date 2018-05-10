@@ -40,7 +40,7 @@
   h3{
     font-size: 28px;
   }
-  p ,h1 ,h4{
+  .content p ,h1 ,h4{
     color: black;
   }
 
@@ -68,14 +68,11 @@
           </div>
 
 <!-- ###################### Start Content ############################# -->
-<div style=" background-color: #fff;">
-  <div id="home" style="background: url(images/channel-partners/channelpartner.png); background-repeat: no-repeat; background-attachment: fixed;    background-position: center; ">
-        <div class="overlay" style="opacity: 0.7;background: #000;  "></div>
-
-        <div class="container wow bounceIn" data-wow-delay="0.8s">
-        <h2 style="color: #fff; font-size: 60px; text-align: center;">Become a <br> channel partner</h2><hr>
-                  </div>
-      </div>
+<div id="home" style="background: url(images/channel-partners/channelpartner.png); background-repeat: no-repeat; background-attachment: fixed;    background-position: center; ">
+  <div class="overlay" style="opacity: 0.7;background: #000; z-index: 1; "></div>
+  <h2 class="container wow bounceIn" data-wow-delay="0.8s" style="color: #fff; font-size: 60px; text-align: center; z-index: 9;">Become a <br> channel partner<hr></h2>
+</div>
+<div class="content" style=" background-color: #fff;">
       <div class="container">
         <!-- <div class="row"> -->
           <p style="padding-top: 5%; font-size: 16px">DATABAR offers our channel partners; mobile operators, system integrators, technology solution providers, value-added resellers (VARs); a broad selection of comprehensive Samsung enterprise mobility; smartphones, consumer graded tablets, Samsung Galaxy Tab Active; Samsung KNOX, barcode and complementary solutions like barcode scanners, wireless handheld scanners, mobile computers, barcode printers, and mobile printers and POS printers including services, from financing, education, training and business development resources to marketing services and pre- and post-sale technical assistance. 

@@ -40,10 +40,9 @@
   h3{
     font-size: 28px;
   }
-  p ,h1 ,h4{
+  .content p ,h1 ,h4{
     color: black;
   }
-
 </style>
 </head>
 <body>
@@ -71,16 +70,15 @@
 
 
 <!-- ###################### Start Content ############################# -->
- <div id="home" style="background: url(images/business-partners/Business-Network.jpg); background-repeat: no-repeat; background-attachment: fixed;    background-position: top; ">
-        <div class="overlay" style="opacity: 0.8;background: #000;  "></div>
+<div id="home" style="background: url(images/business-partners/Business-Network.jpg); background-repeat: no-repeat; background-attachment: fixed;    background-position: top; ">
+  <div class="overlay" style="opacity: 0.5;background: #000; z-index: 1; "></div>
 
-        <div class="container wow bounceIn" data-wow-delay="0.8s">
-        <h2 style="color: #fff; font-size: 60px; text-align: center; ">Become a <br> Business partner</h2><hr>
-                  </div>
-      </div>
+    <h2 class="container wow bounceIn" data-wow-delay="0.8s" style="color: #fff; font-size: 60px; text-align: center; z-index: 9;">Become a <br> Business partner<hr></h2>
+
+</div>
 <div style=" background-color: #fff;">
   <div class="container">
-
+    <div class="content">
         <!-- <div class="row"> -->
           <div class="row wow fadeInUp" style="padding: 20px;" data-wow-delay="0.3s">
             <span class="col-md-3 center" style="">
@@ -172,6 +170,7 @@
               <p></p>              
             </div>
           </div>
+  </div>
   </div>
 </div>
 

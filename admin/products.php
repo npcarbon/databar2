@@ -53,8 +53,7 @@ include 'sidebar.html';
 				$sql = "SELECT products.*, types.Type_Name
 						FROM products 
 						INNER JOIN types ON products.Type_ID = types.Type_ID
-						ORDER BY  products.Type_ID ASC 
-						LIMIT 0,30";
+						ORDER BY  products.Type_ID ASC ";
 				$query = $conn->query($sql);
 
 			?>

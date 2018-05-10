@@ -61,12 +61,12 @@
           </div>
 
 <!-- ###################### Start Content ############################# -->
-<div id="product" style="background: url(images/customer.jpg);">
+<div id="product" style="background: url(images/images.jpg); padding-top: 100px;">
   <div class="overlay">   
-    <h1 style="text-align: center;"><u>We are trust from </u></h1>
+    <h1 style="text-align: center; padding-top: 100px;"><u>We are trust from </u></h1>
   </div>
 </div>
-<div style=" background-color: #fff;padding: 50px;">
+<div style=" background-color: #fff;padding: 0px;">
   <!-- <div class="container"> -->
     <div class="row">
       <?php
@@ -74,8 +74,8 @@
         while ($result = mysqli_fetch_array($query,MYSQLI_ASSOC)) {
           # code...
           ?>
-          <div class="col-md-2 col-sm-4" style="padding-top: 30px; text-align: center;">
-            <a href="<?= $result['Cus_Url']; ?>" target="_blank"><img src="Admin/imgaes/customers/<?= $result['Cus_Pic']; ?>" height="70" ></a>
+          <div class="col-md-2 col-xs-6" style="padding-top: 10px ; padding-bottom: 10px; margin: auto auto;  display: block; ">
+            <a href="<?= $result['Cus_Url']; ?>" target="_blank"><img src="Admin/imgaes/customers/<?= $result['Cus_Pic']; ?>" width="70%"></a>
           </div>
       <?php    
         }

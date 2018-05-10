@@ -88,7 +88,7 @@
           </ul>
         </li>
         <a style="padding: 0;" href="service.php" class="dropbtn" style="font-family: 'Signika', sans-serif;">Services</a>
-        <a style="padding: 0;" href="customer.php" class="dropbtn" style="font-family: 'Signika', sans-serif;">Cutiomsers</a>
+        <a style="padding: 0;" href="customer.php" class="dropbtn" style="font-family: 'Signika', sans-serif;">Customsers</a>
         <li class="dropdown"  style="padding-top: 0;">
           <a style="padding: 0;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Partners <span class="caret"></span></a>
           <ul class="dropdown-menu" style="position: relative;text-align: center;">
@@ -96,7 +96,7 @@
             <li><a href="chanel-partners.php">Chanel Partners</a></li>
           </ul>
         </li>
-        <a  style="padding: 0;" class="dropbtn" style="font-family: 'Signika', sans-serif;"  data-toggle="modal" data-target="#modal1">Contact</a>
+        <a  onclick="closeNav()" style="padding: 0;" class="dropbtn" style="font-family: 'Signika', sans-serif;"  data-toggle="modal" data-target="#modal1">Contact</a>
       </ul>
 </div>
 

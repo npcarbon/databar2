@@ -1,11 +1,4 @@
-<style type="text/css">
-  .shadow {
-  -webkit-box-shadow: 1px 1px 3px 2px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  -moz-box-shadow:    1px 1px 3px 2px #ccc;  /* Firefox 3.5 - 3.6 */
-  box-shadow:         1px 1px 3px 2px #ccc;
-}
-</style>
-<div class="navbar navbar-default shadow" style="height: 80px;">
+<div class="navbar navbar-default navbar-fixed-top my-navbar" style="height: 80px;">
   <div class="container">
     <div class="navbar-header">
       <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -13,10 +6,10 @@
         <span class="icon icon-bar"></span>
         <span class="icon icon-bar"></span>
       </button>
-      <a href="index.php" class="navbar-brand"><img src="images/logo.png"></a>
+      <a href="index.php" class="navbar-brand"><img src="images/logo.png" width="180px"></a>
     </div>
 <div class="collapse navbar-collapse">
-			<ul class="nav navbar-nav navbar-right">
+			<ul class="nav navbar-nav navbar-right" style="  opacity: 1;">
         <li>
           <div class="dropdown">
             <a class="dropbtn" href="#" style="font-family: 'Signika', sans-serif;">Product</a> 

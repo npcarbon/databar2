@@ -11,7 +11,8 @@
 </head>
 <body>
     <div class="container" style="width:700px;" align="center">  
-        <h3 class="text-center">Drag & drop and delete file upload using JQuery Ajax and PHP</h3><br />  
+        <h3 class="text-center">IMAGES</h3><br />  
+        <p>Databar/Admin/imgaes/products</p>
         <div class="file_drag">  
                 Drop Files Here  
         </div>  

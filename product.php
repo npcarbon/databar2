@@ -26,7 +26,7 @@ include 'include/condb.php';
 
 <link href='https://fonts.googleapis.com/css?family=Unica+One' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
-<link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
 <!-- Main css -->
 <link rel="stylesheet" href="css/webstyle.css">
@@ -42,8 +42,8 @@ include 'include/condb.php';
 } 
 </script>
 <style type="text/css">
-  h1,h2,h3,h4,h5{
-    color: black;
+  h1,h2{
+    color: #FFF;
   }
 </style>
 </head>
@@ -70,12 +70,12 @@ include 'include/condb.php';
           </div>
 
 <!-- ###################### Start Content ############################# -->
-<div class="visible-lg visible-md" style=" background-color: #fff;padding: 50px;">
+<div class="visible-lg visible-md" style=" background-color:  #3f3f3f;padding: 100px;">
   <?php
     $sql = "SELECT * FROM groups WHERE Group_ID = '".$_GET['group']."'";
     $query = $conn->query($sql);
       while ($result = $query->fetch_array(MYSQLI_ASSOC)) { ?>
-       <h2 style="color: black; padding-bottom: 20px;"><?= $result['Group_Name'];?></h2>
+       <h2 style="padding-bottom: 20px;"><?= $result['Group_Name'];?></h2>
     <div class="container-fluid">
       <div class="row">
           <?php
@@ -83,7 +83,7 @@ include 'include/condb.php';
           $sql = "SELECT * FROM products WHERE Group_ID = '".$_GET['group']."'";
           $query = $conn->query($sql);
           while ($rs = $query->fetch_array(MYSQLI_ASSOC)) { ?>
-          <div class="col-lg-2 col-md-4 col-xs-12">
+          <div class="col-md-3 col-xs-12">
             <div class="panel panel-default"  style="min-height: 570px;">
               <div class="panel-heading">
                 <h3 class="panel-title"><?= $rs["Pro_Name"]; ?></h3>

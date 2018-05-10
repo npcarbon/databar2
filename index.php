@@ -23,15 +23,18 @@
 
 <link href='https://fonts.googleapis.com/css?family=Unica+One' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
-<link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
 <!-- Main css -->
 <link rel="stylesheet" href="css/webstyle.css">
-<link rel="stylesheet" href="css/dropbtn1.css">
+<link rel="stylesheet" href="css/dropbtn.css">
 <link rel="stylesheet" href="css/slideshow.css">
 <style type="text/css">
   .item-block {
     padding-top: 5%;
+  }
+  .padtop{
+    padding-top: 20px;
   }
 </style>
 <script type="text/javascript">
@@ -69,13 +72,13 @@
 
 <!-- Slide Section -->
 
-<section id="slide" >
-     <div class="container">
+<section id="slide">
+     <div >
  <!-- <center><img src="images/logolight.png" style="width: 15%;" class="img-responsive"alt="Logo" style="top: 100px;"></center>                              -->
           
 
 
-               <section class="awSlider" >
+               <section class="awSlider" style="margin: auto auto;">
                  <div  class="carousel slide" data-ride="carousel">
                    <!-- Indicators -->
                    <ol class="carousel-indicators">
@@ -132,36 +135,36 @@
                     </div>
                </div>
 
-               <div class="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.4s">
+               <div class="wow fadeInUp col-md-3 col-xs-6 padtop" data-wow-delay="0.4s">
                     <div class="item wow bounceIn" data-wow-delay="0.1s">
                          <a href="#">
                               <img src="images/groups/Group1.jpg" class="img-responsive">
                          </a>    
-                         <center><button onclick="window.location.href='product.php?group=1'" class="btn btn-success section-btn visible-lg visible-md" >View All</button></center>
+                         <center><button onclick="window.location.href='product.php?group=1'" class="btn btn-success section-btn" >View All</button></center>
                     </div>
                </div>
-               <div class="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.4s">
+               <div class="wow fadeInUp col-md-3 col-xs-6 padtop" data-wow-delay="0.4s">
                     <div class="item wow fadeInUp" data-wow-delay="0.3s">
                          <a href="#">
                               <img src="images/groups/Group2.jpg" class="img-responsive">
                          </a>
-                         <center><button onclick="window.location.href='product.php?group=2'" class="btn btn-success section-btn visible-lg visible-md" >View All</button></center>
+                         <center><button onclick="window.location.href='product.php?group=2'" class="btn btn-success section-btn" >View All</button></center>
                     </div>
                </div>
-               <div class="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.4s">
+               <div class="wow fadeInUp col-md-3 col-xs-6 padtop" data-wow-delay="0.4s">
                     <div class="item wow fadeInUp" data-wow-delay="0.5s">
                           <a href="#">
                               <img src="images/groups/Group3.jpg" class="img-responsive">
                           </a>
-                         <center><button onclick="window.location.href='product.php?group=3'" class="btn btn-success section-btn visible-lg visible-md">View All</button></center>
+                         <center><button onclick="window.location.href='product.php?group=3'" class="btn btn-success section-btn">View All</button></center>
                     </div>
                </div>
-               <div class="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.4s">
+               <div class="wow fadeInUp col-md-3 col-xs-6 padtop" data-wow-delay="0.4s">
                     <div class="item wow fadeInUp" data-wow-delay="0.7s">
                          <a href="#">
                               <img src="images/groups/Group4.jpg" class="img-responsive">
                          </a>
-                         <center><button onclick="window.location.href='product.php?group=4 '" class="btn btn-success section-btn visible-lg visible-md">View All</button></center>
+                         <center><button onclick="window.location.href='product.php?group=4 '" class="btn btn-success section-btn">View All</button></center>
                </div>
           </div>
      </div>
@@ -212,11 +215,11 @@
      <div class="overlay"></div>
      	<div class="row">
 
-               <div class="wow fadeInUp col-md-6 col-sm-5 col-xs-10 col-xs-offset-1 col-sm-offset-0" data-wow-delay="0.2s">
+               <div class="wow fadeInUp col-md-5 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" data-wow-delay="0.2s">
                     <img src="images/Knox.png" class="img-responsive">
                </div>
 
-               <div class="col-md-6 col-sm-7 col-xs-12">
+               <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="home-thumb">
                          <h1 class="wow fadeInUp" data-wow-delay="0.6s">Knox Technology</h1>
                          <p class="wow fadeInUp" data-wow-delay="0.8s">Knox is a new security feature that is being offered with certain Samsung handsets. It helps you to securely separate your personal and professional data. Essentially, you can have the benefits of using a 'work phone' without the need to carry, and secure, a separate device.</p>
