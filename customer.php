@@ -2,7 +2,7 @@
 
       include 'include/condb.php';
 
-      $sql = "SELECT * FROM customer";
+      $sql = "SELECT Cus_Pic,Cus_Url FROM customer Order By Cus_Name";
       $query = $conn->query($sql);
 ?>
 <!DOCTYPE html>
@@ -66,22 +66,24 @@
     <h1 style="text-align: center; padding-top: 100px;"><u>We are trust from </u></h1>
   </div>
 </div>
-<div style=" background-color: #fff;padding: 0px;">
-  <!-- <div class="container"> -->
+<div style=" background-color: #fff;padding: 5%;">
+  <div style="padding: 1% 10% 1% 10%">
     <div class="row">
       <?php
 
         while ($result = mysqli_fetch_array($query,MYSQLI_ASSOC)) {
           # code...
           ?>
-          <div class="col-md-2 col-xs-6" style="padding-top: 10px ; padding-bottom: 10px; margin: auto auto;  display: block; ">
-            <a href="<?= $result['Cus_Url']; ?>" target="_blank"><img src="Admin/imgaes/customers/<?= $result['Cus_Pic']; ?>" width="70%"></a>
+          <div class="col-md-2 col-xs-6" style="padding-top: 10px ; padding-bottom: 10px; display: block; height: 100px;">
+            <div style="vertical-align: middle;">
+              <center><a href="<?= $result['Cus_Url']; ?>" target="_blank"><img src="Admin/imgaes/customers/<?= $result['Cus_Pic']; ?>" width="80%"  ></a></center>     
+            </div>
           </div>
       <?php    
         }
       ?>
     </div>    
-  <!-- </div> -->
+  </div>
  
 </div>
 

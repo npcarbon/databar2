@@ -1,9 +1,9 @@
 
 <?php
 $servername = "localhost";
-$username = "root";
-$password = "1234";
-$dbname = "databar";
+$username = "databar_DB1";
+$password = "Databar2014";
+$dbname = "databar_DB1";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

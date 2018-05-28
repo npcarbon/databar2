@@ -1,0 +1,130 @@
+
+/*-------Animation Image----*/
+.session-img {
+  margin:0 auto;
+  position: relative;
+}
+.session-img > img{
+  opacity: 1;
+  display: block;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.session-img {
+  position: relative;
+  overflow: hidden;
+}
+.overlay-color{
+  display:inline-block;
+  position: relative;
+}
+.overlay-color:after {
+  content:'';
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  transition: 1s ease;
+  display: block;
+  position: absolute;
+  background: black;
+  opacity: 0;
+}
+.overlay-color:hover:after {
+  opacity: .4;
+}
+ .session-img > img{
+  opacity: 1;
+  display: block;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  transition: 0.7s ease;
+  -webkit-box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.43); 
+  box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.43);
+}
+ .session-img:hover img{
+  opacity: 1;
+  width: 82%;
+  transform: translate(0px,-20px);
+  -webkit-box-shadow: 0px 15px 9px 7px rgba(0,0,0,0.35); 
+  box-shadow: 0px 15px 9px 7px rgba(0,0,0,0.35);
+}
+/*Animation*/
+.texth1{
+  color: white;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  position: relative;
+  animation: text 3s 1;
+}
+@keyframes text {
+  0%{margin-bottom: -40px;}
+  30%{letter-spacing: 25px; margin-bottom: -40px;}
+  85%{letter-spacing: 8px;}
+}
+.bgwhite{
+  background-color: #e8e8e8;
+}
+.bgwhite > .section-title > h1,.bgwhite > .section-title > p{
+  color: #1a1a1a; 
+}
+.bgblack{
+  background-color: black;
+  text-align: center;
+}
+.bgblack h1, .bgblack h2, .bgblack h3, .bgblack h4, .bgblack h5, .bgblack p {
+    color:#fff;
+}
+
+/*Tabs*/
+.tab {
+    overflow: hidden;
+    
+}
+.tab button{
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+.tab button:hover {
+    background-color: transparent;
+    color: #00B2E5;
+    text-decoration: underline;
+    border: none !important;
+}
+
+.tab button.active {
+    background-color: transparent;
+    color: #00B2E5;
+    text-decoration: underline;
+    border: none !important;;
+}
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.img-session{
+  position: relative;
+  display: box;
+  top: 200px;
+  z-index: 1;
+}
+/*.active{
+  overflow: hidden;
+  top:100px;
+  animation: imgup 3s 1;
+  z-index: 1;
+}
+@keyframes imgup {
+  0%{top:50px; left: 10px;}
+  85%{top:-100px; left: 10px;}
+}
+*/

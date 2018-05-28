@@ -24,7 +24,8 @@ include '../include/condb.php';
 <link href='https://fonts.googleapis.com/css?family=Unica+One' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
-<script src="//cdn.ckeditor.com/4.9.2/full/ckeditor.js"></script>
+<script src="../ckeditor/ckeditor.js"></script>
+<!-- <script src="//cdn.ckeditor.com/4.9.2/full/ckeditor.js"></script> -->
 <script type="text/javascript">
 function getBrand(Group_Id){
    var strURL="findBand.php?group="+Group_Id;
@@ -65,6 +66,7 @@ if (Brand_ID.length == 0) {
 	WHERE Pro_ID = '".$_GET["id"]."'";
 	$query2 =$conn->query($sql2);
 	$rs = mysqli_fetch_array($query2,MYSQLI_ASSOC);
+
 ?>
 </head>
 <body>
@@ -77,7 +79,18 @@ include 'sidebar.html';
 
 				<h5>Product's Picture </h5><br>
 				<input type="text" name="Pro_ID" value="<?= $rs['Pro_ID']?>" hidden>
-				<input type="file" name="filUpload" class="form-control" value="<?= $rs['Pro_Pic']?>"><br>
+				<div class="row">
+					<div class="col">
+						<input type="file" name="filUpload" class="form-control" value="<?= $rs['Pro_Pic']?>"><br>
+						
+					</div>
+					<div class="col">
+						<img src="imgaes/products/<?php echo $rs["Pic"];?>"" width="20%;"><br>
+						<input type="hidden" name="hdnOldFile" value="<?php echo $rs["Pic"];?>">
+						
+					</div>
+					
+				</div>
 				<h5 style="padding-top: 20px;">Product's Code </h5>
 				<input type="text" name="pro_code" class="form-control" value="<?= $rs['Pro_Code']?>">
 				<h5 style="padding-top: 20px;">Product's Model </h5>
@@ -86,7 +99,7 @@ include 'sidebar.html';
 				<input type="text" name="pdf" class="form-control"><br>
 
 				<h5 style="padding-top: 20px;">Product's Detail</h5>
-				<textarea name="editor1" class="form-control"><?= $rs['Pro_Detail']?></textarea>
+				<textarea name="editor1" class="ckeditor"><?= $rs['Pro_Detail']?></textarea>
 
 				<h5 style="padding-top: 20px;">Product's Description </h5>
 				<textarea name="editor2" class="form-control"><?= $rs['Pro_Descpt']?></textarea>

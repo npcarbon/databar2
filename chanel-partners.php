@@ -23,7 +23,7 @@
 
 <link href='https://fonts.googleapis.com/css?family=Unica+One' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
-<link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
 
 <!-- Main css -->
 <link rel="stylesheet" href="css/webstyle.css">
@@ -68,9 +68,19 @@
           </div>
 
 <!-- ###################### Start Content ############################# -->
-<div id="home" style="background: url(images/channel-partners/channelpartner.png); background-repeat: no-repeat; background-attachment: fixed;    background-position: center; ">
-  <div class="overlay" style="opacity: 0.7;background: #000; z-index: 1; "></div>
-  <h2 class="container wow bounceIn" data-wow-delay="0.8s" style="color: #fff; font-size: 60px; text-align: center; z-index: 9;">Become a <br> channel partner<hr></h2>
+<div id="product" style="background: url(images/channel-partners/channelpartner.png); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center;">
+  <div class="overlay" style="opacity: 0.8;background: #000;  "></div>
+
+  <div class="container wow bounceIn" data-wow-delay="0.8s">
+              <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
+                <div class="slider-text-inner text-center">
+                  <h2 class="wow bounceIn" data-wow-delay="0.8s" style="color: #ffffff; font-size: 60px; text-align: center; z-index: 999; padding-top: 4%;">
+                    Become a <br> channel partner</h2>
+              
+                    <hr>
+                </div>
+              </div>
+            </div>
 </div>
 <div class="content" style=" background-color: #fff;">
       <div class="container">
@@ -117,16 +127,6 @@
      include 'include/foot.inc';
 ?>
 
-<? $('#exampleModal').on('show.bs.modal', function (event) {
-  var button = $(event.relatedTarget) // Button that triggered the modal
-  var recipient = button.data('whatever') // Extract info from data-* attributes
-  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-  var modal = $(this)
-  modal.find('.modal-title').text('New message to ' + recipient)
-  modal.find('.modal-body input').val(recipient)
-})
-?>
 
 <!-- SCRIPTS -->
 

@@ -29,6 +29,7 @@
 
 <!-- Main css -->
 <link rel="stylesheet" href="css/webstyle.css">
+<link rel="stylesheet" href="css/stylepages.css">
 <link rel="stylesheet" href="css/dropbtn.css">
 <link rel="stylesheet" href="css/slideshow.css">
 <style type="text/css">
@@ -98,12 +99,12 @@ $result = mysqli_fetch_array($query,MYSQLI_ASSOC);
         </div>
       </div>
       <br><hr>
-      <div class="container" style="padding-top: 2% ">
+    </div>
+      <div style="padding-top: 2% ">
         <div class="tab-content" >
           <?= $result['Pro_Descpt']; ?>
         </div> 
       </div>
-    </div>
   </div>
 
   <section id="divider" style="background: #e6e6e6">

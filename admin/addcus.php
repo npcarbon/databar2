@@ -64,7 +64,7 @@ include 'sidebar.html';
 				<button type="submit" class="btn btn-success btn-lg  btn-block">
 					submit
 				</button>
-				<button type="button" class="btn btn-danger btn-lg  btn-block" onclick="window.location.href='index.php';">
+				<button type="button" class="btn btn-danger btn-lg  btn-block" onclick="window.location.href='customer.php';">
 					Back
 				</button>
 			</div>			

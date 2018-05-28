@@ -60,10 +60,10 @@
 
 <!-- ###################### Start Content ############################# -->
 <div style=" background-color: #fff;">
-<div id="home" style="background: url(images/services/services-background.jpg); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center;">
+<div id="product" style="background: url(images/services/services-background.jpg); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center;">
   <div class="overlay" style="opacity: 0.8;background: #000;  "></div>
 
-  <div class="container wow bounceIn" data-wow-delay="0.8s">
+  <div class="container wow bounceIn" data-wow-delay="0.8s" style="padding-top: 4%;">
               <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
                 <div class="slider-text-inner text-center">
                   <h2><u>DATABAR Services Center</u></h2>
