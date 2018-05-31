@@ -41,7 +41,14 @@ include 'sidebar.html';
 							echo "<div class=\"alert alert-success\"><center>Product added.</center></div>";
 						break;
 						case 'delete':
-							echo "<div class=\"alert alert-danger\"><center>Product deleted.</center></div>";
+							$cmdDel = "DELETE FROM groups
+									WHERE Group_ID = '".$_GET['id']."'";
+							$query = $conn->query($cmdDel) or die("Error in query: $cmdDel " . mysqli_error());
+							if($query) {
+						        echo "<div class=\"alert alert-danger\"><center>Brand deleted.</center></div>";
+							}else{
+						        echo "<script type='text/javascript'>alert('Brand can't Delete.);</script>" ;
+						    }
 						break;
 						}
 		?>
@@ -49,7 +56,7 @@ include 'sidebar.html';
 		<h1>Groups</h1>
 								<?php
 								$sql = "SELECT * FROM groups 
-										-- ORDER BY  `brands`.`Group_ID` ASC ";
+										ORDER BY  `Group_ID` ASC ";
 								$query = $conn->query($sql); 
 								?>
 							</select>
@@ -70,7 +77,7 @@ include 'sidebar.html';
 								<td>
 									
 									<button type="button" class="btn btn-primary btn-sm" onclick="window.location.href='edit-group.php?id=<?= $result["Group_ID"];?>'">Edit</button>
-									<button type="button" class="btn btn-danger btn-sm" onclick="window.location.href='data/delete-group.php?id=<?= $result["Group_ID"];?>'">Delete</button>
+									<button type="button" class="btn btn-danger btn-sm" onclick="window.location.href='group.php?a=delete&id=<?= $result["Group_ID"];?>'">Delete</button>
 								</td>
 							</tr>
 						<?php

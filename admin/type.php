@@ -41,16 +41,24 @@ include 'sidebar.html';
 							echo "<div class=\"alert alert-success\"><center>Product added.</center></div>";
 						break;
 						case 'delete':
-							echo "<div class=\"alert alert-danger\"><center>Product deleted.</center></div>";
+							$sql = "DELETE FROM types
+									WHERE Type_ID = '".$_GET['id']."'";
+							$query = $conn->query($sql) or die("Error in query: $sql " . mysqli_error());
+							if($query) {
+						        echo "<div class=\"alert alert-danger\"><center>Type deleted.</center></div>";
+							}else{
+						        echo "<script type='text/javascript'>alert('Type can't Delete.);</script>" ;
+						    }
 						break;
 						}
 		?>
-		<form class="form-control" method="post" action="data/savetype.php" style="padding-top: 50px; background-color: ##F5F5F5;" enctype="multipart/form-data">
+		<form class="form-control" method="post" style="padding-top: 50px; background-color: ##F5F5F5;" enctype="multipart/form-data">
 		<h1>Type</h1>
 								<?php
-								$sql = "SELECT types . * , brands.Brand_Name
+								$sql = "SELECT types . * ,brands.Brand_Name ,groups.Group_Name 
 										FROM types 
 										INNER JOIN brands ON types.Brand_ID = brands.Brand_ID
+										INNER JOIN groups ON brands.Group_ID = groups.Group_ID
 										ORDER BY  `types`.`Brand_ID` ASC ";
 								$query = $conn->query($sql); 
 								?>
@@ -58,8 +66,9 @@ include 'sidebar.html';
 						<table class="table">
 							<tr>
 								<th width="5%"></th>
-								<th>Type Name</th>
-								<th>Brand Name</th>
+								<th>Type's Name</th>
+								<th>Brand's Name</th>
+								<th>Group's Name</th>
 								<th></th>
 							</tr>
 						<?php
@@ -71,10 +80,11 @@ include 'sidebar.html';
 								</td>
 								<td><?= $result['Type_Name']?></td>
 								<td><?= $result['Brand_Name']?></td>
+								<td><?= $result['Group_Name']?></td>
 								<td>
 									
 									<button type="button" class="btn btn-primary btn-sm" onclick="window.location.href='edit-type.php?id=<?= $result["Type_ID"];?>'">Edit</button>
-									<button type="button" class="btn btn-danger btn-sm" onclick="window.location.href='data/delete-type.php?id=<?= $result["Type_ID"];?>'">Delete</button>
+									<button type="button" class="btn btn-danger btn-sm" onclick="window.location.href='type.php?a=delete&id=<?= $result["Type_ID"];?>'">Delete</button>
 								</td>
 							</tr>
 						<?php

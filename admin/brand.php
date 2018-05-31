@@ -41,16 +41,24 @@ include 'sidebar.html';
 							echo "<div class=\"alert alert-success\"><center>Product added.</center></div>";
 						break;
 						case 'delete':
-							echo "<div class=\"alert alert-danger\"><center>Product deleted.</center></div>";
+							$cmdDel = "DELETE FROM brands
+									WHERE Brand_ID = '".$_GET['id']."'";
+							$query = $conn->query($cmdDel) or die("Error in query: $cmdDel " . mysqli_error());
+							if($query) {
+						        echo "<div class=\"alert alert-danger\"><center>Brand deleted.</center></div>";
+							}else{
+						        echo "<script type='text/javascript'>alert('Brand can't Delete.);</script>" ;
+						    }
 						break;
 						}
 		?>
-		<form class="form-control" method="post" action="data/savetype.php" style="padding-top: 50px; background-color: ##F5F5F5;" enctype="multipart/form-data">
+		<form class="form-control" method="post" style="padding-top: 50px; background-color: ##F5F5F5;" enctype="multipart/form-data">
 		<h1>Brands</h1>
 								<?php
-								$sql = "SELECT * FROM brands 
+								$sql = "SELECT brands . * , groups.Group_Name 
+										FROM brands 
 										INNER JOIN groups ON brands.Group_ID = groups.Group_ID
-										-- ORDER BY  `brands`.`Group_ID` ASC ";
+										ORDER BY  `brands`.`Group_ID` ASC ";
 								$query = $conn->query($sql); 
 								?>
 							</select>
@@ -73,7 +81,7 @@ include 'sidebar.html';
 								<td>
 									
 									<button type="button" class="btn btn-primary btn-sm" onclick="window.location.href='edit-brand.php?id=<?= $result["Brand_ID"];?>'">Edit</button>
-									<button type="button" class="btn btn-danger btn-sm" onclick="window.location.href='data/delete-brand.php?id=<?= $result["Brand_ID"];?>'">Delete</button>
+									<button type="button" class="btn btn-danger btn-sm" onclick="window.location.href='brand.php?a=delete&id=<?= $result["Brand_ID"];?>'">Delete</button>
 								</td>
 							</tr>
 						<?php
