@@ -25,7 +25,7 @@ include '../include/condb.php';
 <link href='https://fonts.googleapis.com/css?family=Unica+One' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
-<script src="//cdn.ckeditor.com/4.9.2/full/ckeditor.js"></script>
+<script src="../ckeditor/ckeditor.js"></script>
 <script type="text/javascript">
 function getBrand(Group_Id){
    var strURL="findBand.php?group="+Group_Id;

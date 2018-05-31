@@ -84,7 +84,7 @@ include 'include/condb.php';
           $query = $conn->query($sql);
           while ($rs = $query->fetch_array(MYSQLI_ASSOC)) { ?>
           <div class="col-md-3 col-xs-12">
-            <div class="panel panel-default"  style="min-height: 570px;">
+            <div class="panel panel-default"  style="min-height: 510px;">
               <div class="panel-heading">
                 <h3 class="panel-title"><?= $rs["Pro_Name"]; ?></h3>
                 <h5 style="margin-top: 0px;"><?= $rs["Pro_Code"]; ?></h5>

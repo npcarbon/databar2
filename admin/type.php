@@ -31,24 +31,56 @@ include '../include/condb.php'
 include 'sidebar.html';
 ?>
 	<div class="container">
+		<?php
+				$action = isset($_GET['a']) ? $_GET['a'] : "";
+					switch ($action) {
+						case 'edit':
+							echo "<div class=\"alert alert-success\"><center>Product edited.</center></div>";
+						break;
+						case 'add':
+							echo "<div class=\"alert alert-success\"><center>Product added.</center></div>";
+						break;
+						case 'delete':
+							echo "<div class=\"alert alert-danger\"><center>Product deleted.</center></div>";
+						break;
+						}
+		?>
 		<form class="form-control" method="post" action="data/savetype.php" style="padding-top: 50px; background-color: ##F5F5F5;" enctype="multipart/form-data">
 		<h1>Type</h1>
 								<?php
-								$sql = "SELECT TYPES . * , brands.Brand_Name
-										FROM TYPES 
+								$sql = "SELECT types . * , brands.Brand_Name
+										FROM types 
 										INNER JOIN brands ON types.Brand_ID = brands.Brand_ID
 										ORDER BY  `types`.`Brand_ID` ASC ";
-								$query = $conn->query($sql);
-								while ($result = mysqli_fetch_array($query,MYSQLI_ASSOC)) {
-									?>
-									<?= $result['Brand_ID']?> <?= $result['Brand_Name']?>
-									<?php
-								}
+								$query = $conn->query($sql); 
 								?>
 							</select>
-					
-
-				
+						<table class="table">
+							<tr>
+								<th width="5%"></th>
+								<th>Type Name</th>
+								<th>Brand Name</th>
+								<th></th>
+							</tr>
+						<?php
+							while ($result = mysqli_fetch_array($query,MYSQLI_ASSOC)) {
+						?>
+							<tr>
+								<td>
+									<input type="checkbox" name="status">
+								</td>
+								<td><?= $result['Type_Name']?></td>
+								<td><?= $result['Brand_Name']?></td>
+								<td>
+									
+									<button type="button" class="btn btn-primary btn-sm" onclick="window.location.href='edit-type.php?id=<?= $result["Type_ID"];?>'">Edit</button>
+									<button type="button" class="btn btn-danger btn-sm" onclick="window.location.href='data/delete-type.php?id=<?= $result["Type_ID"];?>'">Delete</button>
+								</td>
+							</tr>
+						<?php
+							}
+						?>
+						</table>
 		
 		</form>
 

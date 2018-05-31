@@ -25,6 +25,7 @@
 
 <link href='https://fonts.googleapis.com/css?family=Unica+One' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
 
 <!-- Main css -->
@@ -39,6 +40,10 @@
   }
   .box p{
     font-size: 1.2em;
+    font-weight:400;
+  }
+  #PLR{
+    padding: 2% 15% 2% 15%;
   }
   hr {
   -moz-border-bottom-colors: none;
@@ -79,7 +84,7 @@ $result = mysqli_fetch_array($query,MYSQLI_ASSOC);
       <a href="index.php">Home</a> / <a href="#">Products</a> /<?= $result['Pro_Name']; ?>
     </div>
     <div style="height: 10px;"></div>
-    <div class="container" style="padding-bottom: 50px;">
+    <div class="container" style="padding-bottom: 1%;">
       <div class="row" style="padding: 0; margin: 0;">
         <div class="col-md-8 col-sm-8 h1" style="">
           <h2><?= $result['Pro_Name']; ?></h2><br><center>
@@ -100,7 +105,7 @@ $result = mysqli_fetch_array($query,MYSQLI_ASSOC);
       </div>
       <br><hr>
     </div>
-      <div style="padding-top: 2% ">
+      <div style="padding : 2% ">
         <div class="tab-content" >
           <?= $result['Pro_Descpt']; ?>
         </div> 
