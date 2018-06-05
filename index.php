@@ -1,3 +1,6 @@
+<?php
+include 'include/condb.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -253,7 +256,7 @@
                     <div class="home-thumb">
                          <h1 class="wow fadeInUp" data-wow-delay="0.6s" style="font-family: 'Oxygen';padding-bottom: 3%;">Knox Technology</h1>
                          <p class="wow fadeInUp" data-wow-delay="0.8s">Knox is a new security feature that is being offered with certain Samsung handsets. It helps you to securely separate your personal and professional data. Essentially, you can have the benefits of using a 'work phone' without the need to carry, and secure,<br> a separate device.</p>
-                         <a href="#product" class="wow fadeInUp section-btn btn btn-success smoothScroll" data-wow-delay="1s" style="font-family: 'Open Sans';">Learn more</a>
+                         <a href="knox.php" class="wow fadeInUp section-btn btn btn-success smoothScroll" data-wow-delay="1s" style="font-family: 'Open Sans';">Learn more</a>
                     </div>
                </div>
 

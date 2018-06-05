@@ -72,15 +72,19 @@ include 'include/condb.php';
 <!-- ###################### Start Content ############################# -->
 <div class="visible-lg visible-md" style=" background-color:  #3f3f3f;padding: 100px;">
   <?php
-    $sql = "SELECT * FROM groups WHERE Group_ID = '".$_GET['group']."'";
+    $sql = "SELECT * FROM groups WHERE Group_Name = '".$_GET['group']."'";
     $query = $conn->query($sql);
-      while ($result = $query->fetch_array(MYSQLI_ASSOC)) { ?>
+      while ($result = $query->fetch_array(MYSQLI_ASSOC)) { 
+        $group_id = $result['Group_ID'];
+        ?>
        <h2 style="padding-bottom: 20px;"><?= $result['Group_Name'];?></h2>
     <div class="container-fluid">
       <div class="row">
           <?php
           }
-          $sql = "SELECT * FROM products WHERE Group_ID = '".$_GET['group']."'";
+          $sql = "SELECT * FROM products
+                   WHERE Group_ID = '".$group_id."'"
+          ;
           $query = $conn->query($sql);
           while ($rs = $query->fetch_array(MYSQLI_ASSOC)) { ?>
           <div class="col-md-3 col-xs-12">
@@ -96,15 +100,22 @@ include 'include/condb.php';
                 <hr>
                 <p><?php 
                 
-                 if(strlen($rs['Pro_Detail']) > 100) {
+                 if(strlen($rs['Pro_Detail']) > 110) {
                     
-                   echo $subject = substr($rs['Pro_Detail'],0,100)."... <br><br> <a class='btn btn-success' role='button' href='product-detail.php?pro_id=".$rs["Pro_ID"]."'>READ MORE</a>";
+                   echo $subject = substr($rs['Pro_Detail'],0,110)."... <br><br> <a class='btn btn-success' role='button' href='product-detail.php?pro_id=".$rs["Pro_ID"]."'>READ MORE</a>";
+                   }else{
+                    echo $subject = substr($rs['Pro_Detail'])."<br><br> <a class='btn btn-success margina' role='button' href='product-detail.php?pro_id=".$rs["Pro_ID"]."'>READ MORE</a>";
                    }
                 ?>
                 </p>
               </div>
             </div>
           </div>
+          <style type="text/css">
+            .margina {
+              margin-top: 1%; 
+            }
+          </style>
 <?php
 }
   ?> 

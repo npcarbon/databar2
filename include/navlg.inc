@@ -14,10 +14,18 @@
           <div class="dropdown">
             <a class="dropbtn" href="#" style="font-family: 'Signika', sans-serif;">Product</a> 
              <div class="dropdown-content fadedInUp">
-              <a href="product.php?group=1">Mobility</a>
-              <a href="product.php?group=2">Printer</a>
-              <a href="product.php?group=3">Micro Computer/PDA</a>
-              <a href="product.php?group=4">Scanner/Barcode</a>
+              <?php
+              $sql1 = "SELECT * FROM groups 
+                      ORDER BY  `Group_ID` ASC ";
+              $query1 = $conn->query($sql1);
+              while ($result1 = $query1->fetch_assoc()) {
+              if ($result1['Group_Name'] == Knox){
+                 echo '<a href="knox.php">'.$result1['Group_Name'].'</a>';
+               } else {
+               echo '<a href="product.php?group='. $result1['Group_Name']. '"> '. $result1['Group_Name'] .'</a>';
+              }
+           }
+                ?>
             </div>
           </div>
         </li>

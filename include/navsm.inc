@@ -81,10 +81,18 @@
         <li class="dropdown">
           <a  style="padding: 0;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
           <ul class="dropdown-menu" style="position: relative;text-align: center;">
-            <li><a href="product.php?group=1">Mobility</a></li>
-            <li><a href="product.php?group=2">Printer</a></li>
-            <li><a href="product.php?group=3">Micro Computer/PDA</a></li>
-            <li><a href="product.php?group=4">Scanner/Barcode</a></li>
+             <?php
+              $sql1 = "SELECT * FROM groups 
+                      ORDER BY  `Group_ID` ASC ";
+              $query1 = $conn->query($sql1);
+              while ($result1 = $query1->fetch_assoc()) {
+              if ($result1['Group_Name'] == Knox){
+                 echo '<li><a href="knox.php">'.$result1['Group_Name'].'</a></li>';
+               } else {
+               echo '<li><a href="product.php?group='. $result1['Group_Name']. '"> '. $result1['Group_Name'] .'</a></li>';
+              }
+           }
+                ?>
           </ul>
         </li>
         <a style="padding: 0;" href="service.php" class="dropbtn" style="font-family: 'Signika', sans-serif;">Services</a>
