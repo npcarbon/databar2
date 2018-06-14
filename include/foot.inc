@@ -56,7 +56,7 @@
           E-mail : sales@databar.co.th    
           </p>
 
-<div class="row">
+<div class="row" style="padding-bottom: 2%;">
      <div class="col-md-6">
           <a href="images/map_CDC.jpg" class="image-popup1" data-dismiss="modal">
                <img src="images/map_CDC.jpg" class="img-responsive" alt="map">

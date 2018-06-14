@@ -54,6 +54,7 @@ include 'sidebar.html';
 		?>
 		<form class="form-control" method="post" style="padding-top: 50px; background-color: ##F5F5F5;" enctype="multipart/form-data">
 		<h1>Brands</h1>
+		<a href="addbrand.php" class="btn btn-outline-success btn-sm"> <span style="font-size: 1em;"><strong>+</strong></span> Add new Brand</a><br><br>
 								<?php
 								$sql = "SELECT brands . * , groups.Group_Name 
 										FROM brands 

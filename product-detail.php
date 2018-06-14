@@ -112,7 +112,7 @@ $result = mysqli_fetch_array($query,MYSQLI_ASSOC);
       </div>
   </div>
 
-  <section id="divider" style="background: #e6e6e6">
+  <!-- <section id="divider" style="background: #e6e6e6">
     <div class="row">
       <div class="col-md-offset-2 col-md-8 col-sm-12">
         <h2>Relation Content</h2>
@@ -164,7 +164,7 @@ $result = mysqli_fetch_array($query,MYSQLI_ASSOC);
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 </div>
     
 

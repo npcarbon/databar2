@@ -54,6 +54,7 @@ include 'sidebar.html';
 		?>
 		<form class="form-control" method="post" style="padding-top: 50px; background-color: ##F5F5F5;" enctype="multipart/form-data">
 		<h1>Type</h1>
+		<a href="addtype.php" class="btn btn-outline-success btn-sm"> <span style="font-size: 1em;"><strong>+</strong></span> Add new Type</a><br><br>
 								<?php
 								$sql = "SELECT types . * ,brands.Brand_Name ,groups.Group_Name 
 										FROM types 

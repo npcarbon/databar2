@@ -1,0 +1,14 @@
+body {
+  padding: 0em;
+  background: #EEEEEE
+}
+.bx-wrapper {
+  width: 100%;
+  border: 0px solid white;
+}
+.bx-wrapper .bx-viewport {
+  height: 70px !important;
+}
+.bx-wrapper li {
+  margin-top: 0px !important;
+}

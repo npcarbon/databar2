@@ -54,6 +54,7 @@ include 'sidebar.html';
 		?>
 		<form class="form-control" method="post" action="data/savetype.php" style="padding-top: 50px; background-color: ##F5F5F5;" enctype="multipart/form-data">
 		<h1>Groups</h1>
+		<a href="addgroup.php" class="btn btn-outline-success btn-sm"> <span style="font-size: 1em;"><strong>+</strong></span> Add new Group</a><br><br>
 								<?php
 								$sql = "SELECT * FROM groups 
 										ORDER BY  `Group_ID` ASC ";

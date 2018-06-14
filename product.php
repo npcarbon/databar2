@@ -100,11 +100,12 @@ include 'include/condb.php';
                 <hr>
                 <p><?php 
                 
-                 if(strlen($rs['Pro_Detail']) > 110) {
+                 if(strlen($rs['Pro_Detail']) > 100) {
                     
-                   echo $subject = substr($rs['Pro_Detail'],0,110)."... <br><br> <a class='btn btn-success' role='button' href='product-detail.php?pro_id=".$rs["Pro_ID"]."'>READ MORE</a>";
-                   }else{
-                    echo $subject = substr($rs['Pro_Detail'])."<br><br> <a class='btn btn-success margina' role='button' href='product-detail.php?pro_id=".$rs["Pro_ID"]."'>READ MORE</a>";
+                   echo $subject = substr($rs['Pro_Detail'],0,100)."... <br><br> <a class='btn btn-success' role='button' href='product-detail.php?pro_id=".$rs["Pro_ID"]."'>READ MORE</a>";
+                   }
+                   else{
+                    echo substr($rs['Pro_Detail'])."<br><br> <a class='btn btn-success margina' role='button' href='product-detail.php?pro_id=".$rs["Pro_ID"]."'>READ MORE</a>";
                    }
                 ?>
                 </p>
@@ -124,26 +125,28 @@ include 'include/condb.php';
 </div>
 <div class="visible-sm visible-xs" style=" background-color: #fff;padding: 50px;">
   <?php
-    $sql = "SELECT * FROM groups WHERE Group_ID = '".$_GET['group']."'";
-    $query = $conn->query($sql);
-      while ($result = $query->fetch_array(MYSQLI_ASSOC)) { ?>
-       <h2 style="color: black; padding-bottom: 20px;"><?= $result['Group_Name'];?></h2>
+    $sql1 = "SELECT * FROM groups WHERE Group_Name = '".$_GET['group']."'";
+    $query1 = $conn->query($sql1);
+      while ($result1 = $query1->fetch_array(MYSQLI_ASSOC)) { 
+         $group_id1 = $result1['Group_ID'];
+         ?>
+       <h2 style="color: black; padding-bottom: 20px;"><?= $result1['Group_Name'];?></h2>
        <div class="container-fluid">
       <div class="row">
           <?php
           }
-          $sql = "SELECT * FROM products WHERE Group_ID = '".$_GET['group']."'";
-          $query = $conn->query($sql);
-          while ($rs = $query->fetch_array(MYSQLI_ASSOC)) { ?>
+          $sql2 = "SELECT * FROM products WHERE Group_ID = '".$group_id1."'";
+          $query2 = $conn->query($sql2);
+          while ($rs2 = $query2->fetch_array(MYSQLI_ASSOC)) { ?>
           <div class="col-sm-6 col-xs-12">
             <div class="panel panel-default">
               <div class="panel-heading">
-                <h3 class="panel-title"><?= $rs["Pro_Name"]; ?></h3>
-                <h5 style="margin-top: 0px;"><?= $rs["Pro_Code"]; ?></h5>
+                <h3 class="panel-title"><?= $rs2["Pro_Name"]; ?></h3>
+                <h5 style="margin-top: 0px;"><?= $rs2["Pro_Code"]; ?></h5>
               </div>
               <div class="panel-body">
-                <a href="product-detail.php?pro_id=<?= $rs['Pro_ID'] ?>">
-                  <img src="Admin/imgaes/products/<?= $rs["Pic"]; ?>" class="img-responsive">
+                <a href="product-detail.php?pro_id=<?= $rs2['Pro_ID'] ?>">
+                  <img src="Admin/imgaes/products/<?= $rs2["Pic"]; ?>" class="img-responsive">
                 </a>
               </div>
             </div>

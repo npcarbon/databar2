@@ -58,12 +58,6 @@
 <body style="padding-top: 100px;">
 
 
-<!-- PRE LOADER -->
-
-<div class="preloader">
-     <div class="sk-spinner sk-spinner-pulse"></div>
-</div>
-
 
 
           <div class="visible-md visible-lg visible-sm ">
@@ -79,158 +73,33 @@
 
               
 
- 
-                    
-<!-- ###################### Start Content ############################# -->
 
-                <!-- <div style=" background-color: #ffffff; padding: 0px;"> -->
-<!--                     <div class="col-md-12 col-sm-12 text-right" style=" background-color: #1E2D5A; padding-top: 1%; padding-bottom: 1%; margin: 0px; color: #ffffff; padding-right:5%;" >
-                          <a href="index.php">Home</a> / <a href="#">Products</a> / .......
-                    </div>
-                    <div style="height: 10px;"></div>
-                    <div class="container" style="text-align: center;">
-                     
-
-                     <h1 style="text-align:center; padding-top: 5%;"><strong>Fit for life on the move</strong></h1><br>
-
-                        <p style="text-align:center">Rugged design with a sense of sophistication. At a slim 9.7mm wide, the Galaxy Xcover4 is thinner than previous generations and features an easy-to-grip, non-slip finish. It won&rsquo;t slide out of your hand unexpectedly while on the go.</p>
-
-                        <p style="text-align:center; padding-top: 5%;"><img alt="Fit for life on the move" src="Admin/imgaes/products/xcover4-1.jpg" style="width:100%" /></p>
-
-                        <h1 style="text-align:center"><strong>Reliably durable</strong></h1><br>
-
-                        <p style="text-align:center">Designed to function wherever you go, with IP68 and MIL-STD 810G certification, the Galaxy Xcover4 is durable enough to withstand harsh conditions. Whether you&rsquo;re hiking or playing outdoor sports. you can rest assured your device is protected against dust and water.</p>
-
-                        <p style="text-align:center; padding-top: 5%;"><img alt="Reliably durable" src="Admin/imgaes/products/xcover4-2.jpg" style="width:100%" /></p>
-
-                        <p style="text-align:center">*Can be immersed to a maximum water depth of 1.5 meters for up to 30mins.</p>
-
-                        <h1 style="text-align:center; padding-top: 5%;"><strong>Experience richer resolution</strong></h1><br>
-
-                        <p style="text-align:center">Open your eyes to extraordinary colour. Featuring a bigger screen than previous models, the Galaxy Xcover4 display measures 5.0&rdquo; to deliver exceptional detail. Discover an overall better viewing experience when streaming your favourite multimedia.</p>
-
-                        <p style="text-align:center; padding-top: 5%;"><img alt="Experience richer resolution" src="Admin/imgaes/products/xcover4-3.jpg" style="width:100%" /></p>
-
-                        <h1 style="text-align:center"><strong>Shoot exceptional photos</strong></h1><br>
-
-                        <p style="text-align:center">Higher resolution to create stunning stories. Whether you&rsquo;re taking selfies or capturing stunning landscapes its front 5MP and 13MP rear flash cameras will bring out the best of the world around you. Simply double click the home button for instant access and begin shooting.</p>
-
-
-
-                        <p style="text-align:center; padding-top: 5%;"><img alt="Shoot exceptional photos" src="Admin/imgaes/products/xcover4-4.jpg" style="width:100%" /></p>
-
-
-
-                        <section style="margin: 0; padding: 0; ">
-                            <div class="row" style="display: flex; flex-wrap: wrap; align-items: center;" >
-                                <div class="col-md-6 col-xs-12" style=""> 
-                                        <h1><strong>Increased touch sensitivity</strong></h1>
-                                                <p>Keep your hands warm and dry during use. The Galaxy Xcover4 features an intuitive display that lets you interact with your device even with gloves on so you can go on working outside or enjoying outdoor activities without any issue.</p>
-                                </div>
-                                <div class="col-md-6 col-xs-12 align-items-center"> 
-                                      <img alt="Increased touch sensitivity" src="Admin/imgaes/products/xcover4-5.jpg" style="float:right; width: 100%;" />
-                                </div>
-                            </div>
-                        </section>
-                        <section style="margin: 0; padding: 0; ">
-                            <div class="row" style=" flex-flow: row-reverse; display: flex; flex-wrap: wrap; align-items: center;" >
-                                <div class="col-md-6 col-xs-12" style=""> 
-                                        <h1><strong>Quick and easy access</strong></h1>
-                                                <p>Designed to boost efficiency the Galaxy Xcover4 features an intuitive Active Key that gives users speedy access to their preferred apps. Personalize the key function to open the camera or LED torch light in a flash thanks to its smart functionality.</p>
-                                </div>
-                                <div class="col-md-6 col-xs-12 align-items-center"> 
-                                      <img alt="Increased touch sensitivity" src="Admin/imgaes/products/xcover4-6.jpg" style="float:right; width: 100%;" />
-                                </div>
-                            </div>
-                        </section>
-                        <section style="margin: 0; padding: 0; ">
-                            <div class="row" style="display: flex; flex-wrap: wrap; align-items: center;" >
-                                <div class="col-md-6 col-xs-12" style=""> 
-                                        <h1><strong>Seamless transactions with NFC</strong></h1>
-                                                <p>With NFC integration the Galaxy Xcover4 doubles as your wallet to make paying for purchases or transportation super easy. Simply swipe your device at the counter or subway turnstile to fulfill the transaction and never worry about being without money again.</p>
-                                </div>
-                                <div class="col-md-6 col-xs-12 align-items-center"> 
-                                      <img alt="Increased touch sensitivity" src="Admin/imgaes/products/xcover4-7.jpg" style="float:right; width: 100%;" />
-
-                                </div>
-                            </div>
-                        </section>
-                        <p style="text-align:center">*Samsung Pay is incompatible with Galaxy Xcover4.</p>
-                        <section style="margin: 0; padding: 0; ">
-                            <div class="row" style="flex-flow: row-reverse; display: flex; flex-wrap: wrap; align-items: center;" >
-                                <div class="col-md-6 col-xs-12" style=""> 
-                                        <h1><strong>Packs more power</strong></h1>
-                                                <p>Power made to deliver even longer usage times to maximize enjoyment. The Galaxy Xcover4 comes equipped with a 2800mAh battery to ensure you have plenty of charge to keep your workflow or content streaming going without interruption.</p>
-                                </div>
-                                <div class="col-md-6 col-xs-12 align-items-center"> 
-                                      <img alt="Increased touch sensitivity" src="Admin/imgaes/products/xcover4-8.jpg" style="float:right; width: 100%;" />
-                                </div>
-                            </div>
-                        </section>
-                       
-
-
-                      <p style="text-align:center"><img alt="knox1-1.png" src="Admin/imgaes/products/knox1-1.png" style="width:40%" /></p>
-
-<p style="text-align:center">&nbsp;</p>
-
-<div class="embed-responsive embed-responsive-16by9 padding-top="><iframe frameborder="0" src="https://www.youtube.com/embed/p-pgwYaHVxs"></iframe></div>
-
-<p>&nbsp;</p>
-
-<h1 style="text-align:center"><strong>Defence grade security for an open world</strong></h1>
-
-<p>&nbsp;</p>
-
-<div style="text-align:center"><span style="font-size:18px">Humans will be humans. Naturally they&rsquo;ll lose a work phone or two, and use them in places you don&rsquo;t want them to. But that&rsquo;s okay. People want to be people. They like what they like, do what they do, and get a little carried away sometimes.<br />
-<br />
-That&rsquo;s why we&rsquo;ve built Samsung Knox, mobile security from the chip up, now trusted by many governments worldwide, made for the way people really work. Because why attempt to change your employees&rsquo; behavior, when you can simply change their mobile security?&nbsp;<br />
-Samsung Knox. Defence grade security for an open world.&nbsp;</span></div>
-
-<div style="background-color:black; margin-bottom:0px; margin-left:0px; margin-right:0px; margin-top:0px; padding:0px; text-align:center">
-<h2>&nbsp;</h2>
-
-<div style="padding:4%">
-<h1><span style="color:#ffffff">Knox Technology</span></h1>
-
-<div><span style="color:#ffffff">Trusted by governments and corporations around the world Samsung Knox delivers defence grade security to safeguard your business.</span></div>
-
-<div><span style="color:#ffffff">Knox is a multi-layered platform built into both the hardware and software of Samsung&rsquo;s latest devices. Knox constantly verifies the integrity of the device through a chain of security checks that begin at the platform level and extend to the operating system, and detects any tampering to ensure your data is always secure.</span></div>
-</div>
-
-<p><img alt="knox1-2" src="Admin/imgaes/products/knox1-2.jpg" style="width:100%" /></p>
-
-<div class="row" style="padding:2%">
-<div class="col-md-4 col-sm-4"><img src="Admin/imgaes/products/knox2-1.png" />
-<h2><span style="color:#ffffff">Chipset Security</span>&nbsp;</h2>
-
-<div><span style="color:#ffffff">Samsung manufactures and configures its devices in its own factories, and has designed them so that all critical security mechanisms are anchored from the device chipset.</span></div>
-</div>
-
-<div class="col-md-4 col-sm-4"><img src="Admin/imgaes/products/knox2-2.png" />
-<h2><span style="color:#ffffff">Integrity Monitoring</span>&nbsp;</h2>
-
-<div><span style="color:#ffffff">Booting components are always tested for integrity, while Run Time Protection blocks any code changes to the kernel, and ensures the integrity of the data in system partition.</span></div>
-</div>
-
-<div class="col-md-4 col-sm-4"><img src="Admin/imgaes/products/knox2-3.png" />
-<h2><span style="color:#ffffff">Warranty Bit</span></h2>
-
-<div><span style="color:#ffffff">If hacking or rooting is detected on the device, our one-time e-fuse blows, disallowing any user access and securing all data. Attestation allows IT admins to remotely check if a device is trustworthy.</span></div>
-</div>
-</div> -->
->
 
 <div style="background-color:#ffffff; text-align:center;">
   <div class="row box">
-     <?php
-              $sql1 = "SELECT * FROM groups 
-                      ORDER BY  `Group_ID` ASC ";
-              $query1 = $conn->query($sql1);
-              while ($result1 = $query1->fetch_assoc()) {
-                 echo '<a href="product.php?group='. $result1['Group_ID']. '"> '. $result1['Group_Name'] .'</a>';
-               } 
-              ?>
+
+<?php
+	$cmd="SELECT partner.* , partner_group.PG_Name FROM partner
+		LEFT JOIN partner_group on partner.Partner_Group = partner_group.PG_ID";
+	$que=$conn->query($cmd);
+	while ($res=$que->fetch_assoc()) {
+		# code...
+		$partnerName =  $res['PG_Name'];
+		if ($res['PG_Name'] = $partnerName) {
+			# code...
+			echo $partnerName.'<br>';
+			
+			}
+		
+		// do {
+		// 	# code...
+		// } ($res['Partner_Group'] = $res['Partner_Group'])
+	}
+?>
+
+
+
+
     <h4>Knox Platform</h4>
 
     <h1><strong>A secure device is a<br />

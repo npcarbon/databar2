@@ -71,12 +71,18 @@
 .bgwhite > .section-title > h1,.bgwhite > .section-title > p{
   color: #1a1a1a; 
 }
+.bgwhite h1, .bgwhite h2, .bgwhite h3, .bgwhite h4, .bgwhite h5, .bgwhite p{
+  color: #1a1a1a; 
+}
 .bgblack{
   background-color: black;
   text-align: center;
 }
 .bgblack h1, .bgblack h2, .bgblack h3, .bgblack h4, .bgblack h5, .bgblack p {
     color:#fff;
+}
+.font-white h1, .font-white h2, .font-white h3, .font-white h4, .font-white h5, .font-white p{
+  color: #fff;
 }
 
 /*Tabs*/
@@ -89,8 +95,6 @@
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
 }
 .tab button:hover {
     background-color: transparent;
@@ -117,6 +121,21 @@
   top: 200px;
   z-index: 1;
 }
+  @media (max-width: 600px){
+  .tab button {
+    font-size: 16px;
+    font-weight: 700;
+
+  }
+  }
+  @media (max-width: 500px){
+  .tab button {
+    font-size: 13px;
+    font-weight: 700;
+
+  }
+
+  }
 /*.active{
   overflow: hidden;
   top:100px;

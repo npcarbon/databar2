@@ -77,18 +77,18 @@ include 'include/condb.php';
 
 <div style="background-color:#ffffff; text-align:center;">
   <div class="row box" style="padding-top: 3%; ">
- <h4>Knox Platform</h4>
+    <div class="col-md-4 col-md-offset-4">
+      <h4>Knox Platform</h4>
+      <h1><strong>A secure device is a
+      reliable device</strong></h1>
+    </div>
+    <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1" style="padding: 2%;">
+      <p>The Samsung Knox platform is built into Samsung smartphones, tablets, and wearables at the manufacturing stage, so you have it the moment you unpack your device. The Knox platform consists of overlapping defense and security mechanisms that protect against intrusion, malware, and more malicious threats.</p>
 
-    <h1><strong>A secure device is a<br />
-    reliable device</strong></h1>
-
-    <div class="col-md-8 col-md-offset-2" style="padding: 2%;">
-    <p>The Samsung Knox platform is built into Samsung smartphones, tablets, and wearables at the manufacturing stage, so you have it the moment you unpack your device. The Knox platform consists of overlapping defense and security mechanisms that protect against intrusion, malware, and more malicious threats.</p>
-
-    <p>To further protect these devices for high security use cases, Samsung developed resilient and user-friendly Knox solutions.</p>
+      <p>To further protect these devices for high security use cases, Samsung developed resilient and user-friendly Knox solutions.</p>
     </div>
 
-  <div class="row" style="padding:5% 0 5% 0">
+  <div class="row" style="padding: 10% 0% 5% 0%;">
       <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1"><img src="images/Knox/home-1.jpg" style="width:100%" /></div>
   </div>
   </div>
@@ -130,6 +130,7 @@ include 'include/condb.php';
                             </div>
                               <div class="col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2" style="padding: 5% 0 5% 0;">
                               <h4>Knox IT solutions leverage the Knox platform, and provide IT admins with end-to-end solutions, from configuration and deployment, to managing, securing and maintaining devices.</h4>
+                              <a href="product.php?group=Knox" class="wow fadeInUp section-btn btn btn-success smoothScroll" data-wow-delay="0.5s" style="font-family: 'Open Sans';">Learn more</a>
                             </div>
                       </div>
                   </div>

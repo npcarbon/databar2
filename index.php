@@ -139,7 +139,7 @@ include 'include/condb.php';
 </section>
 <!-- Product Section -->
 
-<section id="product" style=" background-attachment: fixed;">
+<!-- <section id="product" style=" background-attachment: fixed;">
      <div class="overlay">
           
      </div>
@@ -149,11 +149,7 @@ include 'include/condb.php';
                 <div class="col-md-12 col-sm-12">
                   <h1 class="wow texth1">Our products</h1>
                   <hr class="wow fadeInUp" data-wow-delay="0.9s">
-                  <!-- 
-                    <div class="section-title wow fadeInUp">
-                         <h1>Our Products</h1>
-                         <hr>
-                    </div> -->
+   
                </div>
 
                <div class="wow fadeInUp col-md-3 col-xs-6 padtop" data-wow-delay="0.4s">
@@ -197,7 +193,7 @@ include 'include/condb.php';
                </div>
           </div>
      </div>
-</section>
+</section> -->
 
               <!--  -->
 <div class="bgwhite">
