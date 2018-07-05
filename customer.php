@@ -59,24 +59,31 @@
                      include 'include/navsm.inc';
                ?>
           </div>
+<style type="text/css">
+    @media (max-width: 640px) {
 
+    .box-cus .img-logo {
+      width: 100px;
+  }
+}
+</style>
 <!-- ###################### Start Content ############################# -->
-<div id="product" style="background: url(images/images.jpg); padding-top: 100px;">
+<div id="product" style="background: url(images/images.jpg); padding-top: 10%;">
   <div class="overlay">   
-    <h1 style="text-align: center; padding-top: 100px;"><u>We are trust from </u></h1>
+    <h1 style="text-align: center; padding-top: 100px;">Our Customers</h1>
   </div>
 </div>
-<div style=" background-color: #fff;padding: 5%;">
-  <div style="padding: 1% 10% 1% 10%">
+<div style=" background-color: #fff;padding: 0%;">
+  <div style="padding: 0% 0% 0% 0%">
     <div class="row">
       <?php
 
         while ($result = mysqli_fetch_array($query,MYSQLI_ASSOC)) {
           # code...
           ?>
-          <div class="col-md-2 col-xs-6" style="padding-top: 10px ; padding-bottom: 10px; display: block; height: 100px;">
-            <div style="vertical-align: middle;">
-              <center><a href="<?= $result['Cus_Url']; ?>" target="_blank"><img src="Admin/imgaes/customers/<?= $result['Cus_Pic']; ?>" width="80%"  ></a></center>     
+          <div class="box-cus col-md-2 col-xs-3" style="border: 0.1px solid #eee; padding:80px 10px 80px 10px ; display: block;">
+            <div style="vertical-align: middle; ">
+              <center><a href="<?= $result['Cus_Url']; ?>" target="_blank"><img class="img-logo" src="Admin/imgaes/customers/<?= $result['Cus_Pic']; ?>" width="180px"  ></a></center>     
             </div>
           </div>
       <?php    

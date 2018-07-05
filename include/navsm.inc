@@ -96,7 +96,7 @@
           </ul>
         </li>
         <a style="padding: 0;" href="service.php" class="dropbtn" style="font-family: 'Signika', sans-serif;">Services</a>
-        <a style="padding: 0;" href="customer.php" class="dropbtn" style="font-family: 'Signika', sans-serif;">Customsers</a>
+        <a style="padding: 0;" href="customer.php" class="dropbtn" style="font-family: 'Signika', sans-serif;">Customers</a>
         <li class="dropdown"  style="padding-top: 0;">
           <a style="padding: 0;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Partners <span class="caret"></span></a>
           <ul class="dropdown-menu" style="position: relative;text-align: center;">

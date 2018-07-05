@@ -80,114 +80,112 @@ include 'include/condb.php';
               <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
                 <div class="slider-text-inner text-center">
                   <h2 class="wow bounceIn" data-wow-delay="0.8s" style="color: #ffffff; font-size: 60px; text-align: center; z-index: 999; padding-top: 4%;">
-                    Become a <br> Business partner</h2>
+                    Become Business Partner</h2>
               
-                    <hr>
+                    
                 </div>
               </div>
             </div>
 </div>
 <div style=" background-color: #fff; text-align: center; padding: 5% 0 5% 0;">
  
-      <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-          <div class="row">
-             <div class="col-md-3" style="margin: 2% auto 1% auto;">
+      <div class="row" style="padding-bottom: 2%;">
+        <div class="col-md-12">
+             <div class="col-md-3" style="margin: 0% auto 0% auto; padding: 2%; border: 0.1px solid #eee;">
               <a href="https://www.samsung.com/us/business/"><img src="images/business-partners/samsungbusiness.png" width="80%"></a>
             </div>
-            <div class="col-md-3" style="margin: 2% auto 1% auto;">
-              <a href="#"><img src="images/business-partners/NONBG-Logo.png" width="80%"></a>
+            <div class="col-md-3" style="margin: 0% auto 0% auto; padding: 2%; border: 0.1px solid #eee;">
+              <a href="#"><img src="images/business-partners/samsung.jpg" width="80%"></a>
             </div>
-            <div class="col-md-3" style="margin: 2% auto 1% auto;">
+            <div class="col-md-3" style="margin: 0% auto 0% auto; padding: 2%; border: 0.1px solid #eee;">
               <a href="#"><img src="images/business-partners/Authorized service_Non_BG.png" width="80%"></a>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row" style="padding-bottom: 2%; ">
-        <div class="col-md-10 col-md-offset-1">
-          <div class="row">
-            <div class="col-md-3" style="margin: 0% auto 2% auto;">
+            <div class="col-md-3" style="margin: 0% auto 0% auto; padding: 2%; border: 0.1px solid #eee;">
               <a href="#"><img src="images/business-partners/Samsung_Galaxy.png" width="80%"></a>
             </div>
-            <div class="col-md-3" style="margin: 0% auto 2% auto;">
+            <div class="col-md-3" style="margin: 0% auto 0% auto; padding: 2%; border: 0.1px solid #eee;">
               <a href="#"><img src="images/business-partners/Samsung_GalaxyTab_Active2.jpg" width="80%"></a>
             </div>
-            <div class="col-md-3" style="margin: 0% auto 2% auto;">
+            <div class="col-md-3" style="margin: 0% auto 0% auto; padding: 2%; border: 0.1px solid #eee;">
               <a href="#"><img src="images/business-partners/Samsung_GalaxyXCover4.jpg" width="80%"></a>
             </div>
-            <div class="col-md-3" style="margin: 0% auto 2% auto;">
+            <div class="col-md-3" style="margin: 0% auto 0% auto; padding: 2%; border: 0.1px solid #eee;">
               <a href="https://www.samsungknox.com/en"><img src="images/business-partners/Logo-Samsung-Knox.png" width="80%"></a>
             </div>
-          </div>
         </div>
       </div>
 
-      <div class="row" style="padding-bottom: 2%;">
-        <div class="col-md-10 col-md-offset-1">
+<!--       <div class="row" style="padding-bottom: 2%; ">
+        <div class="col-md-12">
           <div class="row">
-            <div class="col-md-3" style="margin: 1% auto 0% auto; display: flex; align-items: center;">
+            
+          </div>
+        </div>
+      </div>
+ -->
+ <div class="row" style="padding-bottom: 2%;">
+        <div class="col-md-12">
+            <div class="col-md-3" style="margin: 0% auto 0% auto; padding: 2%; border: 0.1px solid #eee;">
               <a href="https://www.datalogic.com"><img src="images/business-partners/Datalogic-logo-large.png" width="80%"></a>
             </div>
-             <div class="col-md-3" style="margin: 1% auto 0% auto;">
+             <div class="col-md-3" style="margin: 0% auto 0% auto; padding: 2%; border: 0.1px solid #eee;">
               <a href="http://www.sam4s.com"><img src="images/business-partners/sam4s.jpg" width="80%"></a>
             </div>
-            <div class="col-md-3" style="margin: 1% auto 0% auto;">
+            <div class="col-md-3" style="margin: 0% auto 0% auto; padding: 2%; border: 0.1px solid #eee;">
               <a href="http://www.ute.com"><img src="images/business-partners/unitech.png" width="80%"></a>
             </div>
-            <div class="col-md-3" style="margin: 1% auto 0% auto;">
+            <div class="col-md-3" style="margin: 0% auto 0% auto; padding: 2%; border: 0.1px solid #eee;">
               <a href="https://www.catphones.com"><img src="images/business-partners/catphone.jpg" width="80%"></a>
             </div>
-            <div class="col-md-3" style="margin: 1% auto 0% auto;">
+            <div class="col-md-3" style="margin: 0% auto 0% auto; padding: 2%; border: 0.1px solid #eee;">
               <a href="https://www.bartec.de"><img src="images/business-partners/Bartec.svg.png" width="80%"></a>
             </div>
-            <div class="col-md-3" style="margin: 1% auto 0% auto;">
+            <div class="col-md-3" style="margin: 0% auto 0% auto; padding: 2%; border: 0.1px solid #eee;">
               <a href="https://www.ecom-ex.com"><img src="images/business-partners/Ecom-Instruments.png" width="80%"></a>
             </div>
-             <div class="col-md-3" style="margin: 1% auto 0% auto;">
+             <div class="col-md-3" style="margin: 0% auto 0% auto; padding: 2%; border: 0.1px solid #eee;">
               <a href="https://www.toshibatec.com"><img src="images/business-partners/toshiba-tec.jpg" width="80%"></a>
             </div>
-            <div class="col-md-3" style="margin: 1% auto 0% auto;">
+            <div class="col-md-3" style="margin: 0% auto 0% auto; padding: 2%; border: 0.1px solid #eee;">
               <a href="http://www.bixolon.com"><img src="images/business-partners/bixolon.jpg" width="80%"></a>
             </div>
           </div>
         </div>
-      </div>
 
       <div class="row" style="padding-bottom: 2%;">
-        <div class="col-md-10 col-md-offset-1">
-          <div class="col-md-3" style="margin: 2% auto 0% auto;">
+        <div class="col-md-12">
+            <div class="col-md-3" style="margin: 0% auto 0% auto; padding: 2%; border: 0.1px solid #eee;">
               <a href="https://www.rammount.com"><img src="images/business-partners/RAM-Logo-no-logo-no-website-Black.png" width="80%"></a>
             </div>
-          <div class="row">
-             <div class="col-md-3" style="margin: 2% auto 0% auto;">
+             <div class="col-md-3" style="margin: 0% auto 0% auto; padding: 2%; border: 0.1px solid #eee;">
               <a href="http://www.gamberjohnson.com"><img src="images/business-partners/gamber-johnson.jpg" width="80%"></a>
             </div>
-             <div class="col-md-3" style="margin: 2% auto 0% auto;">
+             <div class="col-md-3" style="margin: 0% auto 0% auto; padding: 2%; border: 0.1px solid #eee;">
               <a href="https://www.koamtac.com"><img src="images/business-partners/koamtac.jpg" width="80%"></a>
+            </div>
+            <div class="col-md-3" style="margin: 0% auto 0% auto; padding: 2%; border: 0.1px solid #eee;">
+              <a href="https://www.koamtac.com"><img src="images/business-partners/bullitt.jpg" width="80%"></a>
             </div>
         </div>
       </div>
-    </div>
+
+
 
       <div class="row" style="padding-bottom: 2%;">
-        <div class="col-md-10 col-md-offset-1">
-          <div class="row">
+        <div class="col-md-12">
 
-            <div class="col-md-3" style="margin: 2% auto 0% auto;">
+            <div class="col-md-3" style="margin: 0% auto 0% auto; padding: 2%; border: 0.1px solid #eee;">
               <a href="https://www.centrify.com"><img src="images/business-partners/centrify-logo.png" width="80%"></a>
             </div>
-            <div class="col-md-3" style="margin: 2% auto 0% auto;">
+            <div class="col-md-3" style="margin: 0% auto 0% auto; padding: 2%; border: 0.1px solid #eee;">
               <a href="https://koolspan.com"><img src="images/business-partners/Koolspan.jpg" width="80%"></a>
             </div>
-            <div class="col-md-3" style="margin: 2% auto 0% auto;">
+            <div class="col-md-3" style="margin: 0% auto 0% auto; padding: 2%; border: 0.1px solid #eee;">
               <a href="http://www.vocal-vest.com"><img src="images/business-partners/vocal-vest.jpg" width="80%"></a>
             </div>
-            <div class="col-md-3" style="margin: 2% auto 0% auto;">
+            <div class="col-md-3" style="margin: 0% auto 0% auto; padding: 2%; border: 0.1px solid #eee;">
               <a href="https://www.42gears.com"><img src="images/business-partners/42gear.jpg" width="80%"></a>
             </div>
-          </div>
         </div>
       </div>
 

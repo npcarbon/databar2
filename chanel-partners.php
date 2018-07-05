@@ -36,17 +36,23 @@
 <style type="text/css">
   h3{
     font-family: 'Signika', sans-serif;
+    font-size: 27px;
+
+  }
+  h4{
+    font-size: 22px;
+    
   }
   p{
-    font-size: 14px;
+    font-size:17px;
+    color: #444;
   }
-  h3{
-    font-size: 28px;
+  .size p {
+    font-size: 19px;
   }
-  .content p ,h1 ,h4{
-    color: black;
+  .font-gray{
+    color: #444;
   }
-
 </style>
 </head>
 <body>
@@ -78,48 +84,47 @@
               <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
                 <div class="slider-text-inner text-center">
                   <h2 class="wow bounceIn" data-wow-delay="0.8s" style="color: #ffffff; font-size: 60px; text-align: center; z-index: 999; padding-top: 4%;">
-                    Become a <br> channel partner</h2>
+                    Become Channel Partner</h2>
               
-                    <hr>
                 </div>
               </div>
             </div>
 </div>
 <div class="content" style=" background-color: #fff;">
-      <div class="container">
+      <div class="container-fluid" style="padding-bottom: 5%;">
         <!-- <div class="row"> -->
-          <p style="padding-top: 5%; font-size: 16px">DATABAR offers our channel partners; mobile operators, system integrators, technology solution providers, value-added resellers (VARs); a broad selection of comprehensive Samsung enterprise mobility; smartphones, consumer graded tablets, Samsung Galaxy Tab Active; Samsung KNOX, barcode and complementary solutions like barcode scanners, wireless handheld scanners, mobile computers, barcode printers, and mobile printers and POS printers including services, from financing, education, training and business development resources to marketing services and pre- and post-sale technical assistance. 
+          <p style="padding: 5% 3% 0 3%; font-size: 16px; text-align: center; ">DATABAR offers our channel partners; mobile operators, system integrators, technology solution providers, value-added resellers (VARs); a broad selection of comprehensive Samsung enterprise mobility; smartphones, consumer graded tablets, Samsung Galaxy Tab Active; Samsung KNOX, barcode and complementary solutions like barcode scanners, wireless handheld scanners, mobile computers, barcode printers, and mobile printers and POS printers including services, from financing, education, training and business development resources to marketing services and pre- and post-sale technical assistance. 
 
         We welcome your participation in our DATABAR channel partner programs and communities.</p>
           <div class="row wow fadeInUp" style="padding: 20px;" data-wow-delay="0.3s">
-            <span class="col-md-3 center" style="">
-              <img src="images/channel-partners/AIS-logo-.jpg" style="width: 80%; ">
+            <span class="col-md-6 col-md-offset-3">
+              <img src="images/channel-partners/AIS-logo-.jpg" style="width: 50%; display:block; margin: 0 auto 0 auto;">
             </span>
-            <div class="col-md-9">
+            <div class="col-md-12" style="text-align: center;">
               <h3>Advanced Info Services Plc. (AIS)</h3>
-              <p>AIS is the leading mobile operator in Thailand. Our core businesses include domestic mobile services, international direct dialing (IDD) services, and international roaming services. Our business strategy focuses on delivering quality in all dimension including device, network, applications and services. At AIS we believe in building and developing the ecosystem of the Thai telecommunication space. With our core strength in network quality, we aim to enhance sustainable growth through quality services delivered by our key business partners. For example, instead of creating our own branded mobile devices, we collaborate with the leading manufacturers to locally market variety of proper mobile devices. Similarly on digital content and applications, a growing group of local content/applications developers join our AIS the Startup, and together we increase variety of digital consumption. In delivering quality services, we work alongside with our business alliances and solutions partners to differentiate our services with segmented privileges, discounts program, and new lifestyle.</p>              
+              <p style="padding: 2% 3% 0 3%;">AIS is the leading mobile operator in Thailand. Our core businesses include domestic mobile services, international direct dialing (IDD) services, and international roaming services. Our business strategy focuses on delivering quality in all dimension including device, network, applications and services. At AIS we believe in building and developing the ecosystem of the Thai telecommunication space. With our core strength in network quality, we aim to enhance sustainable growth through quality services delivered by our key business partners. For example, instead of creating our own branded mobile devices, we collaborate with the leading manufacturers to locally market variety of proper mobile devices. Similarly on digital content and applications, a growing group of local content/applications developers join our AIS the Startup, and together we increase variety of digital consumption. In delivering quality services, we work alongside with our business alliances and solutions partners to differentiate our services with segmented privileges, discounts program, and new lifestyle.</p>              
             </div>
           </div>
           <div class="row wow fadeInUp" style="padding: 20px;" data-wow-delay="0.3s">
-            <div class="col-md-3 ">
-              <img src="images/channel-partners/dtac-logo.jpg" style="width: 80%;">
+            <div class="col-md-6 col-md-offset-3">
+              <img src="images/channel-partners/dtac-logo.jpg" style="width: 50%; display:block; margin: 0 auto 0 auto;">
             </div>
-            <div class="col-md-9" style="padding: ">
+            <div class="col-md-12" style="text-align: center;">
               <h3>Total Access Communication Public Company Limited (DTAC)</h3>
-              <p>Total Access Communication Public Company Limited (DTAC) DTAC was established as a limited company in August 1989 by Bencharongkul family to provide wireless telecommunications services in 800 MHz and 1800 MHz frequency bands under a Build-Transfer-Operate concession granted by CAT Telecom Public Company Limited (formerly known as Communications Authority of Thailand, CAT). To promote the development of telecommunication services in Thailand, the private sector was allowed to participate in the telecommunication market under concessions on a Build-Transfer-Operate (BTO) basis with two state enterprises, which has been corporatized as TOT Corporation Public Company Limited (TOT) and known as TOT Public Company Limited and CAT Telecom Public Company Limited (CAT). In 2012, dtac Trinet Company Limited, a subsidiary of the Company, has obtained the spectrum license for mobile telecommunications in the Frequency Band 2.1 GHz from the National Broadcasting and Telecommunications Commission (NBTC) and provides service in 2013.</p>              
+              <p style="padding: 2% 3% 0 3%;">Total Access Communication Public Company Limited (DTAC) DTAC was established as a limited company in August 1989 by Bencharongkul family to provide wireless telecommunications services in 800 MHz and 1800 MHz frequency bands under a Build-Transfer-Operate concession granted by CAT Telecom Public Company Limited (formerly known as Communications Authority of Thailand, CAT). To promote the development of telecommunication services in Thailand, the private sector was allowed to participate in the telecommunication market under concessions on a Build-Transfer-Operate (BTO) basis with two state enterprises, which has been corporatized as TOT Corporation Public Company Limited (TOT) and known as TOT Public Company Limited and CAT Telecom Public Company Limited (CAT). In 2012, dtac Trinet Company Limited, a subsidiary of the Company, has obtained the spectrum license for mobile telecommunications in the Frequency Band 2.1 GHz from the National Broadcasting and Telecommunications Commission (NBTC) and provides service in 2013.</p>              
             </div>
           </div>
           <div class="row wow fadeInUp" style="padding: 20px;" data-wow-delay="0.3s">
-            <div class="col-md-3 ">
-              <img src="images/channel-partners/true-logo.jpg" style="width: 80%;">
+            <div class="col-md-6 col-md-offset-3">
+              <img src="images/channel-partners/true-logo.jpg" style="width: 40%; display:block;  margin: 0 auto 0 auto;">
             </div>
-            <div class="col-md-9" >
+            <div class="col-md-12" style="text-align: center;">
               <h3>TrueMove</h3>
-              <p>TrueMove offers innovative and high-quality mobile telecommunications services on its nationwide 1800 MHz network to 15 million subscribers throughout Thailand. TrueMove's vision is to create a pioneering wireless hi-speed lifestyle where people can communicate as well as access knowledge, information and entertainment wherever, whenever, and however they wish. The company delivers excellent coverage coupled with quality, value and unique integrated products while also taking the lead to introduce 3G services to the Kingdom.</p>              
+              <p style="padding: 2% 3% 0 3%;">TrueMove offers innovative and high-quality mobile telecommunications services on its nationwide 1800 MHz network to 15 million subscribers throughout Thailand. TrueMove's vision is to create a pioneering wireless hi-speed lifestyle where people can communicate as well as access knowledge, information and entertainment wherever, whenever, and however they wish. The company delivers excellent coverage coupled with quality, value and unique integrated products while also taking the lead to introduce 3G services to the Kingdom.</p>              
             </div>
           </div>        
   </div>
-   <img src="images/channel-partners/Tendencias2016-1.jpg" style="width: 70%; display: block; margin: 3%; margin-left: auto; margin-right: auto;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><br>
+   <!-- <img src="images/channel-partners/Tendencias2016-1.jpg" style="width: 70%; display: block; margin: 3%; margin-left: auto; margin-right: auto;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><br> -->
 </div>
 
 <!-- ###################### End Content ############################# -->

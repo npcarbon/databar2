@@ -15,7 +15,7 @@ include 'include/condb.php';
 <title>Databar</title>
 <link rel="shortcut icon" href="favicon.png">
 
-<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/animate.css">
 <link rel="stylesheet" href="css/font-awesome.min.css">
 
@@ -121,7 +121,7 @@ include 'include/condb.php';
                        <div class="carousel-caption">#6</div>
                      </div>
                      <div class="item">
-                       <img src="images/slides/GTA_12.jpg">
+                       <img src="images/slides/GTA_13.jpg">
                        <div class="carousel-caption">#6</div>
                      </div>
                    </div>
@@ -198,8 +198,9 @@ include 'include/condb.php';
               <!--  -->
 <div class="bgwhite">
                 <div class="wow bounceIn section-title" style="padding-top: 5%;">
-                    <h1><strong>Why Choose Us</strong></h1>
-                    <p class="wow fadeInUp" data-wow-delay="0.3s">We are the Telecommunication Equipment Supplier</p>
+                   
+                    <strong><h1  class="wow fadeInUp" data-wow-delay="0.3s" style="color: black;">We are Valued Added Distributor</h1></strong>
+                    <h1 class="wow fadeInUp" data-wow-delay="0.6s">and authorized service for enterprise mobility solutions </h1>
                 </div>
 </div>
 <section id="whychooseus">
@@ -274,7 +275,7 @@ include 'include/condb.php';
           <div class="row">
                 <div class="wow bounceIn section-title">
                     <h1><strong>App Screenshots</strong></h1>
-                    <p class="wow fadeInUp" data-wow-delay="0.8s" style="padding: 0 20% 0 20%;">Nulla nisi purus, ultrices et scelerisque at, ullamcorper et ex. Phasellus at nisi lobortis, semper tortor sed, gravida neque.</p>
+                    <p class="wow fadeInUp" data-wow-delay="0.8s" style="padding: 0 20% 0 20%;"></p>
                 </div>
             </div>
 
