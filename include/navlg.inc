@@ -46,16 +46,12 @@
         </li>
         <li>
           <div class="dropdown">
-            <a class="dropbtn" style="font-family: 'Signika', sans-serif;">Partners</a> 
-              <div class="dropdown-content fadedInUp">
-                <a href="business-partners.php">Business Partners</a>
-                <a href="chanel-partners.php">Chanel Partners</a>
-              </div>
+            <a href="partners.php" class="dropbtn" style="font-family: 'Signika', sans-serif;">Partners</a> 
           </div>
         </li>
         <li>
-          <div class="dropdown" style="font-family: 'Signika', sans-serif;"  data-toggle="modal" data-target="#modal1">
-            <a href="#" class="dropbtn">Contact</a> 
+          <div class="dropdown">
+            <a href="contact.php" class="dropbtn">Contact</a> 
           </div>
         </li>
 			</ul>

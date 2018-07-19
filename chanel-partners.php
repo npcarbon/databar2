@@ -35,7 +35,6 @@
 
 <style type="text/css">
   h3{
-    font-family: 'Signika', sans-serif;
     font-size: 27px;
 
   }
@@ -77,19 +76,20 @@
           </div>
 
 <!-- ###################### Start Content ############################# -->
-<div id="product" style="background: url(images/channel-partners/channelpartner.png); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center;">
-  <div class="overlay" style="opacity: 0.8;background: #000;  "></div>
+<div id="product" style="background: url(images/channel-partners/channelpartner.png); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: bottom; ">
+			<div class="overlay" style="opacity: 0.5;background: #000;  "></div>
 
-  <div class="container wow bounceIn" data-wow-delay="0.8s">
-              <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
-                <div class="slider-text-inner text-center">
-                  <h2 class="wow bounceIn" data-wow-delay="0.8s" style="color: #ffffff; font-size: 60px; text-align: center; z-index: 999; padding-top: 4%;">
-                    Become Channel Partner</h2>
-              
-                </div>
-              </div>
-            </div>
-</div>
+			<!-- <div class="container-fluid"> -->
+			<div class="row" style="display:flex; align-items: center; justify-content: center; min-height:400px;">
+				<div class="col-md-12 col-sm-12  col-xs-12 text-center">
+					<div class="slider-text-inner text-center box">
+						<h1 class="wow fadeInUp" data-wow-delay="0.3s" style="font-weight: 700;">
+							Become Channel Partner</h1>
+
+					</div>
+				</div>
+			</div>
+		</div>
 <div class="content" style=" background-color: #fff;">
       <div class="container-fluid" style="padding-bottom: 5%;">
         <!-- <div class="row"> -->

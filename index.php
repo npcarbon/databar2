@@ -15,7 +15,7 @@ include 'include/condb.php';
 <title>Databar</title>
 <link rel="shortcut icon" href="favicon.png">
 
-<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/animate.css">
 <link rel="stylesheet" href="css/font-awesome.min.css">
 
@@ -30,6 +30,7 @@ include 'include/condb.php';
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
 <!-- Main css -->
 <link rel="stylesheet" href="css/webstyle.css">
+<link rel="stylesheet" href="css/stylepages.css">
 <link rel="stylesheet" href="css/dropbtn.css">
 <link rel="stylesheet" href="css/slideshow.css">
 <style type="text/css">
@@ -51,6 +52,8 @@ include 'include/condb.php';
 </script>
 </head>
 <body>
+
+
 
 
 <!-- PRE LOADER -->
@@ -120,10 +123,10 @@ include 'include/condb.php';
                        <img src="images/slides/GTA_11.jpg">
                        <div class="carousel-caption">#6</div>
                      </div>
-                     <div class="item">
-                       <img src="images/slides/GTA_13.jpg">
+                     <!-- <div class="item">
+                       <img src="images/slides/GTA_12.jpg">
                        <div class="carousel-caption">#6</div>
-                     </div>
+                     </div> -->
                    </div>
 
                    <!-- Controls -->
@@ -137,72 +140,13 @@ include 'include/condb.php';
                </section>
      </div>
 </section>
-<!-- Product Section -->
-
-<!-- <section id="product" style=" background-attachment: fixed;">
-     <div class="overlay">
-          
-     </div>
-     <div class="container">
-          <div class="row">
-
-                <div class="col-md-12 col-sm-12">
-                  <h1 class="wow texth1">Our products</h1>
-                  <hr class="wow fadeInUp" data-wow-delay="0.9s">
-   
-               </div>
-
-               <div class="wow fadeInUp col-md-3 col-xs-6 padtop" data-wow-delay="0.4s">
-                    <div class="item wow bounceIn" data-wow-delay="0.1s">
-                        
-                          <div class="overlay-color">
-                              <img src="images/groups/Group1.jpg" class="img-responsive " >
-                          </div>
-                    
-                         <center><button onclick="window.location.href='product.php?group=1'" class="btn btn-success section-btn" >View All</button></center>
-                    </div>
-               </div>
-               <div class="wow fadeInUp col-md-3 col-xs-6 padtop" data-wow-delay="0.4s">
-                    <div class="item wow fadeInUp" data-wow-delay="0.3s">
-                        
-                            <div class="overlay-color">
-                              <img src="images/groups/Group2.jpg" class="img-responsive">
-                            </div>
-                   
-                         <center><button onclick="window.location.href='product.php?group=2'" class="btn btn-success section-btn" >View All</button></center>
-                    </div>
-               </div>
-               <div class="wow fadeInUp col-md-3 col-xs-6 padtop" data-wow-delay="0.4s">
-                    <div class="item wow fadeInUp" data-wow-delay="0.5s">
-                          
-                            <div class="overlay-color">
-                              <img src="images/groups/Group3.jpg" class="img-responsive">
-                            </div>
-                         
-                         <center><button onclick="window.location.href='product.php?group=3'" class="btn btn-success section-btn">View All</button></center>
-                    </div>
-               </div>
-               <div class="wow fadeInUp col-md-3 col-xs-6 padtop" data-wow-delay="0.4s">
-                    <div class="item wow fadeInUp" data-wow-delay="0.7s">
-                         
-                          <div class="overlay-color">
-                              <img src="images/groups/Group4.jpg" class="img-responsive">
-                            </div>
-                         
-                         <center><button onclick="window.location.href='product.php?group=4 '" class="btn btn-success section-btn">View All</button></center>
-               </div>
-          </div>
-     </div>
-</section> -->
-
-              <!--  -->
 <div class="bgwhite">
                 <div class="wow bounceIn section-title" style="padding-top: 5%;">
-                   
-                    <strong><h1  class="wow fadeInUp" data-wow-delay="0.3s" style="color: black;">We are Valued Added Distributor</h1></strong>
-                    <h1 class="wow fadeInUp" data-wow-delay="0.6s">and authorized service for enterprise mobility solutions </h1>
+                    <h1><strong>Why Choose Us</strong></h1>
+                    <p class="wow fadeInUp" data-wow-delay="0.3s">We are the Telecommunication Equipment Supplier</p>
                 </div>
 </div>
+
 <section id="whychooseus">
   <div class="overlay">
     <div class="container-fluid ">
@@ -275,7 +219,6 @@ include 'include/condb.php';
           <div class="row">
                 <div class="wow bounceIn section-title">
                     <h1><strong>App Screenshots</strong></h1>
-                    <p class="wow fadeInUp" data-wow-delay="0.8s" style="padding: 0 20% 0 20%;"></p>
                 </div>
             </div>
 
@@ -336,9 +279,6 @@ include 'include/condb.php';
      </div>
 </section>
 
-
-
-<!-- Divider Section -->
 
 
 

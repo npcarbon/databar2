@@ -71,9 +71,9 @@ include 'include/condb.php';
 
 	<!-- PRE LOADER -->
 
-	<!-- <div class="preloader">
-     <div class="sk-spinner sk-spinner-pulse"></div>
-</div> -->
+	<div class="preloader">
+		<div class="sk-spinner sk-spinner-pulse"></div>
+	</div>
 
 
 
@@ -90,28 +90,33 @@ include 'include/condb.php';
 
 
 	<!-- Section 1 -->
-	<div id="product" style="background: url(images/aboutus/cdc.jpg); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center;">
-		<div class="overlay" style="opacity: 0.5;background: #000;  "></div>
+	<div id="product" style="background: url(images/aboutus/cdc.jpg); background-size: cover; background-repeat: no-repeat;  background-position: center; background-attachment: fixed; ">
+		<div class="overlay" style="opacity: 0.6;background: #000;  "></div>
 
 		<!-- <div class="container-fluid"> -->
-		<div class="row">
-			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
-				<div class="slider-text-inner text-center box">
-					<h1 class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: center; font-weight: 400;">
-						About Us</h1>
-					<div style="text-align: left; ">
-						<p class="wow fadeInUp" data-wow-delay="0.6s" style="padding-top:2%; ">DATABAR is business-to-business (B2B) distributor and authorized services that sells, supports, repair services the comprehensive products and solutions of Samsung enterprise mobility, Samsung KNOX (EMM), 42Gears mobility solutions – SaaS/On-cloud and On-premise, barcode and complementary mobility solutions on Samsung Android, Android, iOS, Windows OS platforms.</p> <br>
-						<p class="wow fadeInUp" data-wow-delay="0.9s">DATABAR provides a broad range of experienced sales reps, knowledgeable technical support and skilled professional services to help channel partners to achieve growth in a variety of vertical markets including field force automation, retail, services, healthcare, finance & banking, transport & logistics, manufacturing & supply chain, government and public sector.</p><br>
+		<div class="row" style="display:flex; align-items: center; justify-content: center; min-height:400px;">
+			<div class="slider-text-inner text-center box">
+				<div class="row" style="display:flex; flex-wrap: wrap; align-items: center; justify-content: center; min-height:400px;">
+					<div class="col-md-12" style="padding: 0 10% 0 10%">
+						<h1 class="wow fadeInUp" data-wow-delay="0.3s" style="text-align: center; font-weight: 400;">
+							About Us</h1>
+						<div style="text-align: left; ">
+							<p class="wow fadeInUp" data-wow-delay="0.6s" style="padding-top:2%; ">DATABAR is business-to-business (B2B) distributor and authorized services that sells, supports, repair services the comprehensive products and solutions of Samsung enterprise mobility, Samsung KNOX (EMM), 42Gears mobility solutions – SaaS/On-cloud and On-premise, barcode and complementary mobility solutions on Samsung Android, Android, iOS, Windows OS platforms.</p> <br>
+							<p class="wow fadeInUp" data-wow-delay="0.9s">DATABAR provides a broad range of experienced sales reps, knowledgeable technical support and skilled professional services to help channel partners to achieve growth in a variety of vertical markets including field force automation, retail, services, healthcare, finance & banking, transport & logistics, manufacturing & supply chain, government and public sector.</p><br>
 
 
-						<p class="wow fadeInUp" data-wow-delay="1.2s" style="padding-top:;">Our mission is to help mobile operators or carriers, independent software providers, system integrators, technology solution providers, value-added resellers (VARs), at what they do best by providing the best products, complementary solutions, proprietary tools and supports in the vertical industries. </p><br>
-						<p class="wow fadeInUp" data-wow-delay="1.5s">We aim to enhance your business with seamless provision of Samsung enterprise mobility, non-Samsung mobility, barcode and complementary mobility solutions, and authorized repair services.</p>
+							<p class="wow fadeInUp" data-wow-delay="1.2s" style="padding-top:;">Our mission is to help mobile operators or carriers, independent software providers, system integrators, technology solution providers, value-added resellers (VARs), at what they do best by providing the best products, complementary solutions, proprietary tools and supports in the vertical industries. </p><br>
+							<p class="wow fadeInUp" data-wow-delay="1.5s">We aim to enhance your business with seamless provision of Samsung enterprise mobility, non-Samsung mobility, barcode and complementary mobility solutions, and authorized repair services.</p>
+						</div>
+
 					</div>
 
 				</div>
+
 			</div>
-		</div><br><br><br><br>
+		</div>
 	</div>
+
 
 	<div class="bgwhite"></div>
 	<style type="text/css">
@@ -171,7 +176,7 @@ include 'include/condb.php';
 				width: 65%;
 
 			}
-			.icon-size {
+			.icon-size i {
 				font-size: 60px;
 
 			}
@@ -182,7 +187,7 @@ include 'include/condb.php';
 			.modal-lg {
 				width: 65%;
 			}
-			.icon-size {
+			.icon-size i {
 				font-size: 70px;
 
 
@@ -193,89 +198,85 @@ include 'include/condb.php';
 
 		}
 	</style>
-	<div class="bgblack fwhite" style="padding-top: 1%;  background-color: #4a555b; border-top: 1px solid #fff;  border-bottom: 1px solid #fff;">
-		<!-- <h4>Knox Solutions</h4> -->
-		<div class="row" style="position: relative;">
-			<h1 style="padding-bottom: 3%; "><strong>Core Competencies</strong></h1>
+	<div class="visible-lg visible-md">
+		<div class="bgwhite center fwhite text-center" style="background-color: #4a555b; border-top: 1px solid #fff; border-bottom: 1px solid #fff;">
+			<div class="row">
+				<h1 style="padding-bottom: 3%; "><strong>Core Competencies</strong></h1>
+				<div class="circle" style="margin-top:5%;">
+					<div class="tab">
+						<div class="warp-cen">
+							<div class="icon-size" style="color: #999; ">
+								<button class="icon1 tablink active" onclick="openNumb(event,'1')"><i class="far fa-check-square " style="position: relative; text-align: center;"></i></button>
+								<button class="icon2 tablink" onclick="openNumb(event,'2')"><i class="fab fa-product-hunt"></i></button>
+								<button class="icon3 tablink" onclick="openNumb(event,'3')"><i class="fas fa-shipping-fast"></i></button>
+								<button class="icon4 tablink" onclick="openNumb(event,'4')"><i class="far fa-handshake"></i></button>
+								<button class="icon5 tablink" onclick="openNumb(event,'5')"><i class="fas fa-users"></i></button>
+							</div>
+						</div>
+					</div>
+					<div id="1" class="Numb">
+						<div class="row" style="display: flex; padding-top: 25%; align-items: center;">
+							<div class="col-md-10 col-md-offset-1 ">
+								<div style="color: white;">
+									<h2>Authorization</h2>
+									<li style="padding:2% 0 0 0;">B2B VAD</li>
+									<li>Master distributor</li>
+									<li>Authorized repair services and technical supports</li>
+									<li>Tier 1 managed services</li>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="2" class="Numb" style="display:none">
+						<div class="row" style="padding-top: 13%;">
+							<div class="col-md-10 col-md-offset-1">
+								<div style="color: white;">
+									<h2>Product solutions</h2>
+									<p style="padding:2% 0 1% 0; margin:0; font-weight: 700;">Samsung</p>
+									<li>HHP, GTA2, XCover 4, Wearable</li>
+									<li>KNOX</li>
+									<li>B2B repair services</li>
+									<p style="padding:4% 0 1% 0; margin:0; font-weight: 700;">Non Samsung</p>
+									<li>Other Android, Windows platform mobile devices, Printing devices, IOT</li>
+									<li>MDM, EMM, ATP / MTP, KoolSpan, Iris Biometric, VocalVest</li>
+									<li>Complementary products - mobility and accessories </li>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="3" class="Numb" style="display:none">
+						<div class="row" style="padding-top: 25%;">
+							<div class="col-md-10 col-md-offset-1 ">
+								<div style="color: white;">
+									<h2>Professional services </h2>
+									<li style="padding:2% 0 0 0;">On-site service supports</li>
+									<li>Extended warranty for 1-2 years, 1-3 years</li>
+									<li>Authorized repair services</li>
+									<li>Hotline / Help Desk</li>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="4" class="Numb" style="display:none">
+						<div class="row" style="padding-top: 25%;">
+							<div class="col-md-8 col-md-offset-2">
+								<div style="color: white;">
+									<h2>Partners ecosystem</h2>
+									<li style="padding:2% 0 0 0;">Carriers</li>
+									<li>Solution partners</li>
+									<li>Technology partners</li>
+									<li>System integrators</li>
+									<li>Value added resellers</li>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="5" class="Numb" style="display:none">
+						<div class="row" style="padding-top: 30%;">
+							<div class="col-md-8 col-md-offset-2">
+								<h1>Vertical enterprise customers</h1>
 
-		</div>
-
-		<!-- Tab content -->
-		<div class="row">
-			<div class="circle" style="margin-top:5%;">
-				<div class="tab">
-					<div class="warp-cen">
-						<div class="icon-size" style="color: #999; ">
-							<button class="icon1 tablink active" onclick="openNumb(event,'1')"><i class="far fa-check-square " style="position: relative; text-align: center;"></i></button>
-							<button class="icon2 tablink" onclick="openNumb(event,'2')"><i class="fab fa-product-hunt"></i></button>
-							<button class="icon3 tablink" onclick="openNumb(event,'3')"><i class="fas fa-shipping-fast"></i></button>
-							<button class="icon4 tablink" onclick="openNumb(event,'4')"><i class="far fa-handshake"></i></button>
-							<button class="icon5 tablink" onclick="openNumb(event,'5')"><i class="fas fa-users"></i></button>
-						</div>
-					</div>
-				</div>
-				<div id="1" class="Numb">
-					<div class="row" style="display: flex; padding-top: 25%; align-items: center;">
-						<div class="col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
-							<div style="color: white;">
-								<h2>Authorization</h2>
-								<li>B2B VAD</li>
-								<li>Master distributor</li>
-								<li>Authorized repair services and technical supports</li>
-								<li>Tier 1 managed services</li>
 							</div>
-						</div>
-					</div>
-				</div>
-				<div id="2" class="Numb" style="display:none">
-					<div class="row" style="padding-top: 13%;">
-						<div class="col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
-							<div style="color: white;">
-								<h2>Product solutions</h2>
-								<p>Samsung</p>
-								<li>HHP, GTA2, XCover 4, Wearable</li>
-								<li>KNOX</li>
-								<li>B2B repair services</li>
-								<p>Non Samsung</p>
-								<li>Other Android, Windows platform mobile devices, Printing devices, IOT</li>
-								<li>MDM, EMM, ATP / MTP, KoolSpan, Iris Biometric, VocalVest</li>
-								<li>Complementary products - mobility and accessories </li>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="3" class="Numb" style="display:none">
-					<div class="row" style="padding-top: 25%;">
-						<div class="col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
-							<div style="color: white;">
-								<h2>Professional services </h2>
-								<li>On-site service supports</li>
-								<li>Extended warranty for 1-2 years, 1-3 years</li>
-								<li>Authorized repair services</li>
-								<li>Hotline / Help Desk</li>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="4" class="Numb" style="display:none">
-					<div class="row" style="padding-top: 25%;">
-						<div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
-							<div style="color: white;">
-								<h2>Partners ecosystem</h2>
-								<li>Carriers</li>
-								<li>Solution partners</li>
-								<li>Technology partners</li>
-								<li>System integrators</li>
-								<li>Value added resellers</li>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="5" class="Numb" style="display:none">
-					<div class="row" style="padding-top: 30%;">
-						<div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
-							<h1>Vertical enterprise customers</h1>
-
 						</div>
 					</div>
 				</div>
@@ -298,216 +299,210 @@ include 'include/condb.php';
 		}
 	</script>
 	<style type="text/css">
+		.display-container {
+			position: relative;
+		}
+
+		.Comp {
+			min-height: 400px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.display-left {
+			position: absolute;
+			top: 50%;
+			left: 0%;
+			transform: translate(0%, -50%);
+			-ms-transform: translate(-0%, -50%);
+		}
+
+		.display-right {
+			position: absolute;
+			top: 50%;
+			right: 0%;
+			transform: translate(0%, -50%);
+			-ms-transform: translate(-0%, -50%);
+		}
+
+		.arrow-button {
+			background: transparent;
+			border: transparent;
+			font-size: 30px;
+
+		}
+	</style>
+
+	<div class="visible-sm visible-xs">
+		<div class="display-container" style="padding:20px; background-color: #4a555b;">
+			<center>
+				<h1>Core Competencies</h1>
+				<div class="Comp icon-size" style="color:#999;">
+					<div class="mySlides">
+						<i class="far fa-check-square "></i>
+						<div style="color: white;">
+							<h2>Authorization</h2>
+
+							<li style="padding: 2% 0 0 0;">B2B VAD</li>
+							<li>Master distributor</li>
+							<li>Authorized repair services and technical supports</li>
+							<li>Tier 1 managed services</li>
+						</div>
+					</div>
+					<div class="mySlides">
+						<i class="fab fa-product-hunt"></i>
+						<div class="fwhite" style="color: white;">
+							<h2>Product solutions</h2>
+							<p style="padding:0% 0 2% 0; margin:0; font-weight: 700;">Samsung</p>
+							<li>HHP, GTA2, XCover 4, Wearable</li>
+							<li>KNOX</li>
+							<li>B2B repair services</li>
+
+							<p style="padding:3% 0 1% 0; margin:0; font-weight: 700;">Non Samsung</p>
+							<li>Other Android, Windows platform mobile devices, Printing devices, IOT</li>
+							<li>MDM, EMM, ATP / MTP, KoolSpan, Iris Biometric, VocalVest</li>
+							<li>Complementary products - mobility and accessories </li>
+						</div>
+					</div>
+					<div class="mySlides">
+						<i class="fas fa-shipping-fast"></i>
+						<div style="color: white;">
+							<h2>Professional services </h2>
+							<li>On-site service supports</li>
+							<li>Extended warranty for 1-2 years, 1-3 years</li>
+							<li>Authorized repair services</li>
+							<li>Hotline / Help Desk</li>
+						</div>
+					</div>
+					<div class="mySlides">
+						<i class="far fa-handshake"></i>
+						<div style="color: white;">
+							<h2>Partners ecosystem</h2>
+							<li>Carriers</li>
+							<li>Solution partners</li>
+							<li>Technology partners</li>
+							<li>System integrators</li>
+							<li>Value added resellers</li>
+						</div>
+					</div>
+					<div class="mySlides">
+						<i class="fas fa-users"></i>
+						<h2>Vertical enterprise customers</h2>
+					</div>
+					<button class="arrow-button display-left" onclick="plusDivs(-1)">&#10094;</button>
+					<button class="arrow-button display-right" onclick="plusDivs(1)">&#10095;</button></center>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+			showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			if (n > x.length) {
+				slideIndex = 1
+			}
+			if (n < 1) {
+				slideIndex = x.length
+			}
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			x[slideIndex - 1].style.display = "block";
+		}
+	</script>
+	<style type="text/css">
+		@media (min-width: 768px) {
+			.list {
+				display: block;
+			}
+		}
+
+		@media (min-width: 992px) {
+			.list {
+				display: flex;
+				align-items: center;
+			}
+		}
+
 		.arrow-size {
 			font-size: 30px;
-			padding: 0;
+			padding: 10px 0 0 0;
 			margin: 0;
 			color: #808080;
 		}
 
-		.list {
-			display: flex;
-			align-items: center;
-		}
-
-		.list p {
-			font-weight: normal;
-		}
 
 		/*box databar*/
 
-		.box-border1 {
+		.box-border {
 			display: block;
 			color: #A6ACAF;
-			padding: 10px 1px 1px 1px;
-			margin-top: 3%;
+			padding: 1px 1px 1px 1px;
 			background-color: #A6ACAF;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 		}
 
-		.boxdata1 {
+		.box-border p {
+			padding: 0;
+			margin: 0;
+		}
+
+		.boxdata {
 			flex: 2;
 			background-color: #5DADE2;
-			height: 50px;
-			padding: 10px;
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 0;
+			min-height: 55px;
+			height: auto;
 			margin: 1px;
 			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 			transition: transform .2s;
-		}
-
-		.boxdata2 {
-			flex: 2;
-			background-color: #5DADE2;
-			height: 50px;
-			padding: 10px;
-			margin: 1px;
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-			transition: transform .2s;
-		}
-
-		.boxdata3 {
-			flex: 1;
-			background-color: #5DADE2;
-			height: 50px;
-			padding: 10px;
-			margin: 1px;
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-			transition: transform .2s;
-		}
-
-		.boxdata4 {
-			flex: 2;
-			background-color: #5DADE2;
-			height: 50px;
-			padding: 10px;
-			margin: 1px;
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-			transition: transform .2s;
-		}
-
-		.boxdata5 {
-			flex: 2;
-			background-color: #5DADE2;
-			height: 50px;
-			padding: 10px;
-			margin: 1px;
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-			transition: transform .2s;
-		}
-
-		.boxdata6 {
-			flex: 1;
-			background-color: #5DADE2;
-			height: 50px;
-			padding: 10px;
-			margin: 1px;
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-			transition: transform .2s;
-		}
-
-		.boxdata1:hover {
-			transform: scale(1.2);
-		}
-
-		.boxdata2:hover {
-			transform: scale(1.2);
-		}
-
-		.boxdata3:hover {
-			transform: scale(1.2);
-		}
-
-		.boxdata4:hover {
-			transform: scale(1.2);
-		}
-
-		.boxdata5:hover {
-			transform: scale(1.2);
-		}
-
-		.boxdata6:hover {
-			transform: scale(1.2);
 		}
 
 		/*box partner*/
 
-		.box-border2 {
-			display: block;
-			color: #A6ACAF;
-			padding: 10px 1px 1px 1px;
-			background-color: #A6ACAF;
-		}
-
-		.boxpart1 {
+		.boxpart {
 			flex: 2;
 			background-color: #667588;
-			height: 50px;
-			padding: 20px;
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 0;
+			min-height: 55px;
+			height: auto;
 			margin: 1px;
 			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 			transition: transform .2s;
-		}
-
-		.boxpart2 {
-			flex: 2;
-			background-color: #667588;
-			height: 50px;
-			padding: 20px;
-			margin: 1px;
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-			transition: transform .2s;
-		}
-
-		.boxpart3 {
-			flex: 2;
-			background-color: #667588;
-			height: 50px;
-			padding: 20px;
-			margin: 1px;
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-			transition: transform .2s;
-		}
-
-		.boxpart4 {
-			flex: 1;
-			background-color: #667588;
-			height: 50px;
-			padding: 20px;
-			margin: 1px;
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-			transition: transform .2s;
-		}
-
-		.boxpart5 {
-			flex: 1;
-			background-color: #667588;
-			height: 50px;
-			padding: 20px;
-			margin: 1px;
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-			transition: transform .2s;
-		}
-
-		.boxpart6 {
-			flex: 1;
-			background-color: #667588;
-			height: 50px;
-			padding: 20px;
-			margin: 1px;
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-			transition: transform .2s;
-		}
-
-		.boxpart1:hover {
-			transform: scale(1.2);
-		}
-
-		.boxpart2:hover {
-			transform: scale(1.2);
-		}
-
-		.boxpart3:hover {
-			transform: scale(1.2);
-		}
-
-		.boxpart4:hover {
-			transform: scale(1.2);
-		}
-
-		.boxpart5:hover {
-			transform: scale(1.2);
-		}
-
-		.boxpart6:hover {
-			transform: scale(1.2);
 		}
 
 		/*box user*/
 
-		.box-border3 {
-			display: block;
-			color: #A6ACAF;
-			padding: 10px 1px 1px 1px;
-			background-color: #A6ACAF;
+		.boxuser {
+			flex: 1.5;
+			background-color: #2a374b;
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 0;
+			min-height: 55px;
+			height: auto;
+			margin: 1px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			transition: transform .2s;
 		}
 
 		.list p {
@@ -516,232 +511,116 @@ include 'include/condb.php';
 		}
 
 
-		.boxuser1 {
-			flex: 1.5;
-			background-color: #2a374b;
-			height: 50px;
-			padding: 10px;
-			margin: 1px;
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-			transition: transform .2s;
-		}
-
-		.boxuser2 {
-			flex: 1;
-			background-color: #2a374b;
-			height: 50px;
-			padding: 5px;
-			margin: 1px;
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-			transition: transform .2s;
-		}
-
-		.boxuser3 {
-			flex: 1;
-			background-color: #2a374b;
-			height: 50px;
-			padding: 20px;
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-			transition: transform .2s;
-		}
-
-		.boxuser4 {
-			flex: 1.5;
-			background-color: #2a374b;
-			height: 50px;
-			padding: 5px;
-			margin: 1px;
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-			transition: transform .2s;
-		}
-
-		.boxuser5 {
-			flex: 1;
-			background-color: #2a374b;
-			height: 50px;
-			padding: 20px;
-			margin: 1px;
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-			transition: transform .2s;
-		}
-
-		.boxuser6 {
-			flex: 1;
-			background-color: #2a374b;
-			height: 50px;
-			padding: 20px;
-			margin: 1px;
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-			transition: transform .2s;
-		}
-
-		.boxuser7 {
-			flex: 1;
-			background-color: #2a374b;
-			height: 50px;
-			padding: 20px;
-			margin: 1px;
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-			transition: transform .2s;
-		}
-
-		.boxuser8 {
-			flex: 1;
-			background-color: #2a374b;
-			height: 50px;
-			padding: 20px;
-			margin: 1px;
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-			transition: transform .2s;
-		}
-
-		.boxuser9 {
-			flex: 1;
-			background-color: #2a374b;
-			height: 50px;
-			padding: 5px;
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-			transition: transform .2s;
-		}
-
-		.boxuser1:hover {
+		.boxuser:hover,
+		.boxpart:hover,
+		.boxdata:hover {
 			transform: scale(1.2);
-		}
-
-		.boxuser2:hover {
-			transform: scale(1.2);
-		}
-
-		.boxuser3:hover {
-			transform: scale(1.2);
-		}
-
-		.boxuser4:hover {
-			transform: scale(1.2);
-		}
-
-		.boxuser5:hover {
-			transform: scale(1.2);
-		}
-
-		.boxuser6:hover {
-			transform: scale(1.2);
-		}
-
-		.boxuser7:hover {
-			transform: scale(1.2);
-		}
-
-		.boxuser8:hover {
-			transform: scale(1.2);
-		}
-
-		.boxuser9:hover {
-			transform: scale(1.2);
+			z-index: 1;
 		}
 	</style>
 	<!-- ======Session 3======== -->
 	<div class="bgwhite center fwhite" style="background-color: #fff;">
+		<div class="flowchart"></div>
 		<div class="row" style="padding: 3% 0 5% 0;">
-			<h1 style="color: #444; font-size: 50px;"><strong>Business Channel</strong></h1>
+			<h1 style="color: #444; font-size: 50px; padding: 0 0 1%;"><strong>Business Channel</strong></h1>
 			<div class="col-md-10 col-md-offset-1">
 				<div class="col-md-12">
-					<div class="box-border1 wow fadeInUp" data-wow-delay="0.3s">
-						<h2 style="padding: 0 0 5px;margin: 0; font-size:25px; ">DATABAR</h2>
+					<div class="box-border wow fadeInUp" data-wow-delay="0.3s">
+						<h2 style="padding: 10px 0 5px 0; margin: 0; font-size:25px; ">DATABAR</h2>
 						<div class="list wow fadeInUp" data-wow-delay="0.6s">
-							<div class="boxdata1">
+							<div class="boxdata">
 								<p>Sales reps for Vertical <br> end users</p>
 							</div>
-							<div class="boxdata2">
+							<div class="boxdata">
 								<p>Sales reps for Channel <br> partners</p>
 							</div>
-							<div class="boxdata3">
+							<div class="boxdata">
 								<p>Pre Sales supports</p>
 							</div>
-							<div class="boxdata4">
+							<div class="boxdata">
 								<p>Co-Promo & <br> Market research</p>
 							</div>
-							<div class="boxdata5">
+							<div class="boxdata">
 								<p>Stock and Credit Term<br>supports</p>
 							</div>
-							<div class="boxdata6">
+							<div class="boxdata">
 								<p>Post Sales supports</p>
 							</div>
 						</div>
 					</div>
 					<div class="row arrow-size wow fadeInDown" data-wow-delay="0.9s">
-						<div class="col-md-4 col-sm-4">
+						<div class="col-md-4 col-sm-4 col-xs-4">
 							<i class="fas fa-arrow-down"></i>
 						</div>
-						<div class="col-md-4 col-sm-4">
+						<div class="col-md-4 col-sm-4 col-xs-4">
 							<i class="fas fa-arrow-down"></i>
 						</div>
-						<div class="col-md-4 col-sm-4">
+						<div class="col-md-4 col-sm-4 col-xs-4">
 							<i class="fas fa-arrow-down"></i>
 						</div>
 					</div>
-					<div class="box-border2 wow fadeInUp" data-wow-delay="1.2s">
-						<h2 style="padding: 0 0 5px;margin: 0; font-size:25px;">Channel Partners</h2>
+					<div class="box-border wow fadeInUp" data-wow-delay="1.2s">
+						<h2 style="padding: 10px 0 5px 0; margin: 0; font-size:25px;">Channel Partners</h2>
 						<div class="list wow fadeInUp" data-wow-delay="1.5s">
-							<div class="boxpart1">
+							<div class="boxpart">
 								<p>Solutions Partners</p>
 							</div>
-							<div class="boxpart2">
+							<div class="boxpart">
 								<p>System Integrators</p>
 							</div>
-							<div class="boxpart3">
+							<div class="boxpart">
 								<p>Value-Added Resellers</p>
 							</div>
-							<div class="boxpart4">
+							<div class="boxpart">
 								<p>AIS (Carrier)</p>
 							</div>
-							<div class="boxpart5">
+							<div class="boxpart">
 								<p>DTAC (Carrier)</p>
 							</div>
-							<div class="boxpart6">
+							<div class="boxpart">
 								<p>TRUE (Carrier)</p>
 							</div>
 						</div>
 					</div>
 					<div class="row arrow-size wow fadeInDown" data-wow-delay="1.8s">
-						<div class="col-md-4 col-sm-4">
+						<div class="col-md-4 col-sm-4 col-xs-4">
 							<i class="fas fa-arrow-down"></i>
 						</div>
-						<div class="col-md-4 col-sm-4">
+						<div class="col-md-4 col-sm-4 col-xs-4">
 							<i class="fas fa-arrow-down"></i>
 						</div>
-						<div class="col-md-4 col-sm-4">
+						<div class="col-md-4 col-sm-4 col-xs-4">
 							<i class="fas fa-arrow-down"></i>
 						</div>
 					</div>
-					<div class="box-border3 wow fadeInUp" data-wow-delay="2.1s">
-						<h2 style="padding: 0 0 5px;margin: 0; font-size:25px;">Vertical End Users</h2>
+					<div class="box-border wow fadeInUp" data-wow-delay="2.1s">
+						<h2 style="padding: 10px 0 5px 0; margin: 0; font-size:25px;">Vertical End Users</h2>
 						<div class="list wow fadeInUp" data-wow-delay="2.4s">
-							<div class="boxuser1">
+							<div class="boxuser">
 								<p>Manufacturing & Supply Chain</p>
 							</div>
-							<div class="boxuser2">
+							<div class="boxuser">
 								<p>Transport & Logistics</p>
 							</div>
-							<div class="boxuser3">
+							<div class="boxuser">
 								<p>Hospital</p>
 							</div>
-							<div class="boxuser4">
+							<div class="boxuser">
 								<p>Finance, Security and Insurance</p>
 							</div>
-							<div class="boxuser5">
+							<div class="boxuser">
 								<p>Retail</p>
 							</div>
-							<div class="boxuser6">
+							<div class="boxuser">
 								<p>Construction</p>
 							</div>
-							<div class="boxuser7">
+							<div class="boxuser">
 								<p>Education</p>
 							</div>
-							<div class="boxuser8">
+							<div class="boxuser">
 								<p>Government</p>
 							</div>
-							<div class="boxuser9">
+							<div class="boxuser">
 								<p>Services & <br> Hotel</p>
 							</div>
 						</div>

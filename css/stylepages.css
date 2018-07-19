@@ -103,14 +103,4 @@
   top: 200px;
   z-index: 1;
 }
-/*.active{
-  overflow: hidden;
-  top:100px;
-  animation: imgup 3s 1;
-  z-index: 1;
-}
-@keyframes imgup {
-  0%{top:50px; left: 10px;}
-  85%{top:-100px; left: 10px;}
-}
-*/
+

@@ -240,6 +240,7 @@ th {
   }
   .navbar {
     display: none;
+	overflow: hidden;
   }
   .btn > .caret,
   .dropup > .btn > .caret {
@@ -3167,6 +3168,64 @@ fieldset[disabled] .btn-primary.focus {
   border-color: #2e6da4;
 }
 .btn-primary .badge {
+  color: #337ab7;
+  background-color: #fff;
+}
+/*---------------------databar------------------------*/
+.btn-databar {
+  color: #fff;
+  background-color: #2797ed;
+  border-color: #2797ed;
+}
+.btn-databar:focus,
+.btn-databar.focus {
+  color: #fff;
+  background-color: #2797ed;
+  border-color: #286090;
+}
+.btn-databar:hover {
+  color: #fff;
+  background-color: #0081e5;
+  border-color: #2797ed;
+}
+.btn-databar:active,
+.btn-databar.active,
+.open > .dropdown-toggle.btn-databar {
+  color: #fff;
+  background-color: #2797ed;
+  border-color: #286090;
+}
+.btn-databar:active:hover,
+.btn-databar.active:hover,
+.open > .dropdown-toggle.btn-databar:hover,
+.btn-databar:active:focus,
+.btn-databar.active:focus,
+.open > .dropdown-toggle.btn-databar:focus,
+.btn-databar:active.focus,
+.btn-databar.active.focus,
+.open > .dropdown-toggle.btn-databar.focus {
+  color: #fff;
+  background-color: #2797ed;
+  border-color: #286090;
+}
+.btn-databar:active,
+.btn-databar.active,
+.open > .dropdown-toggle.btn-databar {
+  background-image: none;
+}
+.btn-databar.disabled:hover,
+.btn-databar[disabled]:hover,
+fieldset[disabled] .btn-databar:hover,
+.btn-databar.disabled:focus,
+.btn-databar[disabled]:focus,
+fieldset[disabled] .btn-databar:focus,
+.btn-databar.disabled.focus,
+.btn-databar[disabled].focus,
+fieldset[disabled] .btn-databar.focus {
+  background-color: #2797ed;
+  border-color: #337ab7;
+}
+.btn-databar .badge {
   color: #337ab7;
   background-color: #fff;
 }

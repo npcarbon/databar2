@@ -78,8 +78,9 @@
       <a style="padding: 0;" href="index.php" class="text-center"><img src="images/LogoLight.png" width="30%"></a>
 
   <ul style="padding: 0;">
-        <li class="dropdown">
-          <a  style="padding: 0;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+  		<a style="padding:10% 0 0 0; margin:0;" href="aboutus.php" class="dropbtn" >About us</a>
+        <li class="dropdown" style="padding: 0; margin:0">
+          <a  style="padding: 0; margin:0" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
           <ul class="dropdown-menu" style="position: relative;text-align: center;">
              <?php
               $sql1 = "SELECT * FROM groups 
@@ -95,16 +96,10 @@
                 ?>
           </ul>
         </li>
-        <a style="padding: 0;" href="service.php" class="dropbtn" style="font-family: 'Signika', sans-serif;">Services</a>
-        <a style="padding: 0;" href="customer.php" class="dropbtn" style="font-family: 'Signika', sans-serif;">Customers</a>
-        <li class="dropdown"  style="padding-top: 0;">
-          <a style="padding: 0;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Partners <span class="caret"></span></a>
-          <ul class="dropdown-menu" style="position: relative;text-align: center;">
-            <li><a href="business-partners.php">Business Partners</a></li>
-            <li><a href="chanel-partners.php">Chanel Partners</a></li>
-          </ul>
-        </li>
-        <a  onclick="closeNav()" style="padding: 0;" class="dropbtn" style="font-family: 'Signika', sans-serif;"  data-toggle="modal" data-target="#modal1">Contact</a>
+        <a style="padding: 0;" href="service.php" class="dropbtn" >Services</a>
+        <a style="padding: 0;" href="customer.php" class="dropbtn" >Customers</a>
+      	<a style="padding: 0;" href="partners.php" class="dropbtn" >Partners</a>
+        <a style="padding: 0;" href="contact.php" class="dropbtn" >Contact</a>
       </ul>
 </div>
 
